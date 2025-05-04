@@ -1,12 +1,23 @@
-# main.py
 import pygame, random, os
 from config import *
 from agent import Orc, Dwarf
 
 pygame.init()
-screen = pygame.display.set_mode(WINDOW_SIZE)
+
+# Determine desired game resolution from config
+desired_size = WINDOW_SIZE  # (world width, world height including UI & chart)
+display_info = pygame.display.Info()
+scale_factor = min(1, display_info.current_w / desired_size[0], display_info.current_h / desired_size[1])
+final_size = (int(desired_size[0] * scale_factor), int(desired_size[1] * scale_factor))
+screen = pygame.display.set_mode(final_size)
+pygame.display.set_caption("Simulation")
+
+# Create a fixed game surface based on config dimensions; we'll scale it to final_size.
+game_surface = pygame.Surface(WINDOW_SIZE)
+
 clock = pygame.time.Clock()
 
+# Load images and scale them to base CELL_SIZE
 orc_img = pygame.image.load("assets/orc.png")
 dwarf_img = pygame.image.load("assets/dwarf.png")
 orc_img = pygame.transform.scale(orc_img, (CELL_SIZE, CELL_SIZE))
@@ -17,25 +28,51 @@ pygame.mixer.music.play(-1)
 attack_sound = pygame.mixer.Sound("assets/attack.wav") if os.path.exists("assets/attack.wav") else None
 death_sound = pygame.mixer.Sound("assets/death.wav") if os.path.exists("assets/death.wav") else None
 
-orcs = [Orc(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1), INITIAL_PREDATOR_ENERGY) for _ in range(NUM_ORCS)]
-dwarves = [Dwarf(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1), INITIAL_PREY_ENERGY) for _ in range(NUM_DWARVES)]
+# Create agents and environment elements
+orcs = [Orc(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1), INITIAL_PREDATOR_ENERGY)
+        for _ in range(NUM_ORCS)]
+dwarves = [Dwarf(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1), INITIAL_PREY_ENERGY)
+           for _ in range(NUM_DWARVES)]
 agents = orcs + dwarves
 
-obstacles = [(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1)) for _ in range(OBSTACLE_COUNT)]
+obstacles = [(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1))
+             for _ in range(OBSTACLE_COUNT)]
 heatmap = [[0]*GRID_SIZE for _ in range(GRID_SIZE)]
-resource_nodes = [(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1)) for _ in range(RESOURCE_NODE_COUNT)]
+resource_nodes = [(random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1))
+                  for _ in range(RESOURCE_NODE_COUNT)]
 last_resource_spawn = 0
 
 log_filename = "log.txt"
-if os.path.exists(log_filename): os.remove(log_filename)
-def log_event(msg): 
-    with open(log_filename, "a") as f: 
-        f.write(msg+"\n")
+if os.path.exists(log_filename):
+    os.remove(log_filename)
+def log_event(msg):
+    with open(log_filename, "a") as f:
+        f.write(msg + "\n")
 
 turn_history, orc_history, dwarf_history = [], [], []
-day = True; turn_counter = 0; paused = False; show_heatmap = SHOW_HEATMAP
+day = True
+turn_counter = 0
+paused = False
+show_heatmap = SHOW_HEATMAP
 weather_state = "clear"
 last_weather_change = 0
+
+# The world area is the top part of the game surface (height = GRID_SIZE * CELL_SIZE).
+# The camera's center (in world pixels) is initially the center of the world.
+camera_x = (GRID_SIZE * CELL_SIZE) / 2
+camera_y = (GRID_SIZE * CELL_SIZE) / 2
+zoom = 1.0
+MIN_ZOOM = 0.5
+MAX_ZOOM = 2.0
+
+def world_to_surface(world_x, world_y):
+    """Convert world pixel coordinates to coordinates on the game_surface's world view area."""
+    world_view_width = WINDOW_SIZE[0]
+    world_view_height = GRID_SIZE * CELL_SIZE  # world view occupies the top portion
+    screen_x = (world_x - camera_x) * zoom + world_view_width / 2
+    screen_y = (world_y - camera_y) * zoom + world_view_height / 2
+    return (int(screen_x), int(screen_y))
+
 
 def switch_roles():
     global day
@@ -74,7 +111,6 @@ def update_agents():
         if agent.is_predator:
             target = find_closest_enemy(agent, agents, False)
             if target and agent.distance_to(target) <= VISION_RADIUS:
-                # In storm, slow movement by sometimes skipping move_random()
                 if weather_state == "storm" and random.random() < STORM_MOVEMENT_SLOWDOWN:
                     pass
                 else:
@@ -89,7 +125,7 @@ def update_agents():
             else:
                 agent.move_random()
             agent.energy -= (PREY_ENERGY_LOSS + extra_loss)
-        if (agent.x, agent.y) in obstacles: 
+        if (agent.x, agent.y) in obstacles:
             agent.x, agent.y = old_x, old_y
         heatmap[agent.x][agent.y] += 1
         if (agent.x, agent.y) in resource_nodes:
@@ -98,7 +134,8 @@ def update_agents():
             log_event(f"Turn {turn_counter}: Resource at ({agent.x},{agent.y}).")
         if agent.energy <= 0 and agent.alive:
             agent.alive = False
-            if death_sound: death_sound.play()
+            if death_sound:
+                death_sound.play()
             log_event(f"Turn {turn_counter}: Agent died at ({agent.x},{agent.y}).")
         agent.update_animation()
 
@@ -110,7 +147,8 @@ def check_interactions():
                 prey.alive = False
                 bonus = 1 + PACK_ENERGY_BONUS_MULTIPLIER * count_pack_members(predator)
                 predator.energy += PREDATOR_ENERGY_GAIN * bonus
-                if attack_sound: attack_sound.play()
+                if attack_sound:
+                    attack_sound.play()
                 log_event(f"Turn {turn_counter}: Kill at ({predator.x},{predator.y}), bonus {bonus:.2f}.")
                 break
 
@@ -155,83 +193,157 @@ def update_resources():
             resource_nodes.append((random.randint(0, GRID_SIZE-1), random.randint(0, GRID_SIZE-1)))
         last_resource_spawn = turn_counter
 
+
 def draw_grid():
+    # Determine background color based on day and weather
     bg = DAY_BG_COLOR if day else NIGHT_BG_COLOR
     if weather_state == "storm":
         bg = (20,20,60)
-    screen.fill(bg)
+    # Fill only the world view area (top part)
+    world_view_height = GRID_SIZE * CELL_SIZE
+    game_surface.fill(bg, rect=pygame.Rect(0, 0, WINDOW_SIZE[0], world_view_height))
+    
+    # Draw obstacles
     for obs in obstacles:
-        pygame.draw.rect(screen, OBSTACLE_COLOR, (obs[0]*CELL_SIZE, obs[1]*CELL_SIZE, CELL_SIZE, CELL_SIZE))
+        top_left = world_to_surface(obs[0] * CELL_SIZE, obs[1] * CELL_SIZE)
+        rect = pygame.Rect(top_left[0], top_left[1], int(CELL_SIZE * zoom), int(CELL_SIZE * zoom))
+        pygame.draw.rect(game_surface, OBSTACLE_COLOR, rect)
+    
+    # Draw heatmap if enabled
     if show_heatmap:
         max_heat = max(max(row) for row in heatmap) if heatmap else 1
         for i in range(GRID_SIZE):
             for j in range(GRID_SIZE):
                 if heatmap[i][j]:
                     intensity = min(255, int(heatmap[i][j] / max_heat * 255))
-                    s = pygame.Surface((CELL_SIZE, CELL_SIZE), pygame.SRCALPHA)
-                    s.fill((intensity,0,0,100))
-                    screen.blit(s, (i*CELL_SIZE, j*CELL_SIZE))
+                    s = pygame.Surface((int(CELL_SIZE * zoom), int(CELL_SIZE * zoom)), pygame.SRCALPHA)
+                    s.fill((intensity, 0, 0, 100))
+                    pos = world_to_surface(i * CELL_SIZE, j * CELL_SIZE)
+                    game_surface.blit(s, pos)
+                    
+    # Draw resource nodes
     for rn in resource_nodes:
-        pygame.draw.circle(screen, (0,255,0), (rn[0]*CELL_SIZE+CELL_SIZE//2, rn[1]*CELL_SIZE+CELL_SIZE//2), CELL_SIZE//3)
+        center = world_to_surface(rn[0] * CELL_SIZE + CELL_SIZE/2, rn[1] * CELL_SIZE + CELL_SIZE/2)
+        pygame.draw.circle(game_surface, (0,255,0), center, int((CELL_SIZE//3)*zoom))
+    
+    # Draw agents
     for agent in agents:
-        if not agent.alive: continue
-        x_pix = int(agent.pos_x)
-        y_pix = int(agent.pos_y)
+        if not agent.alive:
+            continue
+        pos = world_to_surface(agent.pos_x, agent.pos_y)
+        # Scale images according to zoom level
         if isinstance(agent, Orc):
-            screen.blit(orc_img, (x_pix, y_pix))
+            img = pygame.transform.scale(orc_img, (int(CELL_SIZE*zoom), int(CELL_SIZE*zoom)))
         else:
-            screen.blit(dwarf_img, (x_pix, y_pix))
+            img = pygame.transform.scale(dwarf_img, (int(CELL_SIZE*zoom), int(CELL_SIZE*zoom)))
+        game_surface.blit(img, pos)
         if agent.is_predator:
-            pygame.draw.rect(screen, PREDATOR_HIGHLIGHT, (x_pix, y_pix, CELL_SIZE, CELL_SIZE), 2)
-    draw_ui()
+            rect = pygame.Rect(pos[0], pos[1], int(CELL_SIZE*zoom), int(CELL_SIZE*zoom))
+            pygame.draw.rect(game_surface, PREDATOR_HIGHLIGHT, rect, 2)
+    
+    # Draw map borders (world boundaries) in grey
+    corners = [
+        world_to_surface(0, 0),
+        world_to_surface(GRID_SIZE * CELL_SIZE, 0),
+        world_to_surface(GRID_SIZE * CELL_SIZE, GRID_SIZE * CELL_SIZE),
+        world_to_surface(0, GRID_SIZE * CELL_SIZE)
+    ]
+    pygame.draw.lines(game_surface, (128,128,128), True, corners, 2)
 
 def draw_ui():
+    # Draw UI on the lower part of game_surface
     font = pygame.font.SysFont(None, 24)
     alive_orcs = sum(1 for o in orcs if o.alive)
     alive_dwarves = sum(1 for d in dwarves if d.alive)
-    status = f"Turn: {turn_counter} | Orcs: {alive_orcs} | Dwarves: {alive_dwarves} | {'Day' if day else 'Night'} | Weather: {weather_state} | {'Paused' if paused else ''} | Heatmap: {'On' if show_heatmap else 'Off'}"
+    status = f"Turn: {turn_counter} | Orcs: {alive_orcs} | Dwarves: {alive_dwarves} | {'Day' if day else 'Night'} | Weather: {weather_state} | {'Paused' if paused else ''} | Heatmap: {'On' if show_heatmap else 'Off'} | Zoom: {zoom:.2f}"
     text = font.render(status, True, UI_FONT_COLOR)
-    screen.blit(text, (10, GRID_SIZE*CELL_SIZE+10))
+    ui_y = GRID_SIZE * CELL_SIZE
+    game_surface.fill((0,0,0), rect=pygame.Rect(0, ui_y, WINDOW_SIZE[0], UI_HEIGHT + CHART_HEIGHT))
+    game_surface.blit(text, (10, ui_y + 10))
+    
+    # Draw chart below UI text
     turn_history.append(turn_counter)
     orc_history.append(alive_orcs)
     dwarf_history.append(alive_dwarves)
-    chart_top = GRID_SIZE*CELL_SIZE + UI_HEIGHT
+    chart_top = GRID_SIZE * CELL_SIZE + UI_HEIGHT
     chart_bottom = chart_top + CHART_HEIGHT
-    pygame.draw.line(screen, UI_FONT_COLOR, (10, chart_bottom-10), (WINDOW_SIZE[0]-10, chart_bottom-10), 1)
-    pygame.draw.line(screen, UI_FONT_COLOR, (10, chart_top+10), (10, chart_bottom-10), 1)
+    pygame.draw.line(game_surface, UI_FONT_COLOR, (10, chart_bottom-10), (WINDOW_SIZE[0]-10, chart_bottom-10), 1)
+    pygame.draw.line(game_surface, UI_FONT_COLOR, (10, chart_top+10), (10, chart_bottom-10), 1)
     if turn_history:
         max_pop = max(max(orc_history), max(dwarf_history), 1)
         points_orc, points_dwarf = [], []
         for i, turn in enumerate(turn_history):
-            x = 10 + (turn/turn_history[-1])*(WINDOW_SIZE[0]-20)
+            x = 10 + (turn / turn_history[-1]) * (WINDOW_SIZE[0]-20)
             y_orc = chart_bottom-10 - (orc_history[i]/max_pop)*(CHART_HEIGHT-20)
             y_dwarf = chart_bottom-10 - (dwarf_history[i]/max_pop)*(CHART_HEIGHT-20)
             points_orc.append((x, y_orc))
             points_dwarf.append((x, y_dwarf))
         if len(points_orc) > 1:
-            pygame.draw.lines(screen, ORC_COLOR, False, points_orc, 2)
+            pygame.draw.lines(game_surface, ORC_COLOR, False, points_orc, 2)
         if len(points_dwarf) > 1:
-            pygame.draw.lines(screen, DWARF_COLOR, False, points_dwarf, 2)
+            pygame.draw.lines(game_surface, DWARF_COLOR, False, points_dwarf, 2)
+
+
+def handle_mouse_event(event):
+    global camera_x, camera_y, zoom
+    # Convert from actual screen coordinates to game_surface coordinates
+    mouse_x = event.pos[0] / scale_factor
+    mouse_y = event.pos[1] / scale_factor
+    world_view_width = WINDOW_SIZE[0]
+    world_view_height = GRID_SIZE * CELL_SIZE
+    if event.button == 1:
+        # Left-click: recenter camera so that clicked point becomes center.
+        # Inverse transformation:
+        clicked_world_x = (mouse_x - world_view_width/2) / zoom + camera_x
+        clicked_world_y = (mouse_y - world_view_height/2) / zoom + camera_y
+        camera_x = clicked_world_x
+        camera_y = clicked_world_y
+    elif event.button == 4:
+        # Mouse wheel up: zoom in
+        zoom *= 1.1
+        if zoom > MAX_ZOOM:
+            zoom = MAX_ZOOM
+    elif event.button == 5:
+        # Mouse wheel down: zoom out
+        zoom /= 1.1
+        if zoom < MIN_ZOOM:
+            zoom = MIN_ZOOM
+
 
 switch_roles()
 running = True
 while running:
     clock.tick(FPS)
     for event in pygame.event.get():
-        if event.type == pygame.QUIT: running = False
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_p: paused = not paused
-            if event.key == pygame.K_r: reinforcement_event()
-            if event.key == pygame.K_h: show_heatmap = not show_heatmap
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_p:
+                paused = not paused
+            if event.key == pygame.K_r:
+                reinforcement_event()
+            if event.key == pygame.K_h:
+                show_heatmap = not show_heatmap
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            handle_mouse_event(event)
+    
     if not paused:
         turn_counter += 1
-        if turn_counter % DAY_DURATION == 0: switch_roles()
-        if turn_counter % REINFORCEMENT_INTERVAL == 0: reinforcement_event()
+        if turn_counter % DAY_DURATION == 0:
+            switch_roles()
+        if turn_counter % REINFORCEMENT_INTERVAL == 0:
+            reinforcement_event()
         update_weather()
         update_agents()
         check_interactions()
         reproduce_agents()
         update_resources()
+    
     draw_grid()
+    draw_ui()
+    # Scale game_surface to the actual screen size and blit it.
+    scaled_surface = pygame.transform.smoothscale(game_surface, final_size)
+    screen.blit(scaled_surface, (0, 0))
     pygame.display.flip()
+
 pygame.quit()

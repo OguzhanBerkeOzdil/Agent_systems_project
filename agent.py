@@ -1,4 +1,3 @@
-# agent.py
 import random
 from config import GRID_SIZE, CELL_SIZE, ANIMATION_STEPS
 
