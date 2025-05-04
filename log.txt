@@ -1,815 +1,1249 @@
-Turn 6: Kill at (23,11), bonus 1.10.
-Turn 6: Dwarf reproduced at (23,11).
-Turn 7: Kill at (23,11), bonus 1.10.
-Turn 7: Dwarf reproduced at (23,11).
-Turn 8: Kill at (23,11), bonus 1.10.
-Turn 8: Kill at (4,3), bonus 1.20.
-Turn 8: Dwarf reproduced at (23,11).
-Turn 8: Dwarf reproduced at (4,3).
-Turn 9: Kill at (23,11), bonus 1.10.
-Turn 9: Kill at (4,3), bonus 1.20.
-Turn 9: Dwarf reproduced at (23,11).
-Turn 9: Dwarf reproduced at (4,3).
-Turn 10: Kill at (23,11), bonus 1.10.
-Turn 10: Kill at (4,3), bonus 1.20.
-Turn 10: Dwarf reproduced at (23,11).
-Turn 10: Dwarf reproduced at (4,3).
-Turn 11: Kill at (23,11), bonus 1.10.
-Turn 11: Kill at (4,3), bonus 1.20.
-Turn 11: Dwarf reproduced at (23,11).
-Turn 11: Dwarf reproduced at (4,3).
-Turn 12: Kill at (23,11), bonus 1.10.
-Turn 12: Kill at (4,3), bonus 1.20.
-Turn 12: Dwarf reproduced at (23,11).
-Turn 12: Dwarf reproduced at (4,3).
-Turn 13: Kill at (23,11), bonus 1.10.
-Turn 13: Kill at (4,3), bonus 1.20.
-Turn 13: Dwarf reproduced at (23,11).
-Turn 13: Dwarf reproduced at (4,3).
-Turn 14: Kill at (23,11), bonus 1.10.
-Turn 14: Kill at (17,17), bonus 1.00.
-Turn 14: Kill at (4,3), bonus 1.20.
-Turn 14: Dwarf reproduced at (23,11).
-Turn 14: Dwarf reproduced at (17,17).
-Turn 14: Dwarf reproduced at (4,3).
-Turn 15: Kill at (23,11), bonus 1.10.
-Turn 15: Kill at (17,17), bonus 1.00.
-Turn 15: Kill at (4,3), bonus 1.20.
-Turn 15: Dwarf reproduced at (23,11).
-Turn 15: Dwarf reproduced at (17,17).
-Turn 15: Dwarf reproduced at (4,3).
-Turn 16: Kill at (23,11), bonus 1.10.
-Turn 16: Kill at (17,17), bonus 1.00.
-Turn 16: Kill at (4,3), bonus 1.20.
-Turn 16: Dwarf reproduced at (23,11).
-Turn 16: Dwarf reproduced at (17,17).
-Turn 16: Dwarf reproduced at (4,3).
-Turn 17: Kill at (23,11), bonus 1.10.
-Turn 17: Kill at (17,17), bonus 1.00.
-Turn 17: Kill at (4,3), bonus 1.20.
-Turn 17: Dwarf reproduced at (23,11).
-Turn 17: Dwarf reproduced at (17,17).
-Turn 17: Dwarf reproduced at (4,3).
-Turn 18: Kill at (23,11), bonus 1.10.
-Turn 18: Kill at (17,17), bonus 1.00.
-Turn 18: Kill at (4,3), bonus 1.20.
-Turn 18: Dwarf reproduced at (23,11).
-Turn 18: Dwarf reproduced at (17,17).
-Turn 18: Dwarf reproduced at (4,3).
-Turn 19: Kill at (23,11), bonus 1.10.
-Turn 19: Kill at (17,17), bonus 1.00.
-Turn 19: Kill at (4,3), bonus 1.20.
-Turn 19: Dwarf reproduced at (23,11).
-Turn 19: Dwarf reproduced at (17,17).
-Turn 19: Dwarf reproduced at (4,3).
-Turn 20: Kill at (23,11), bonus 1.10.
-Turn 20: Kill at (17,17), bonus 1.00.
-Turn 20: Kill at (4,3), bonus 1.20.
-Turn 20: Dwarf reproduced at (23,11).
-Turn 20: Dwarf reproduced at (17,17).
-Turn 20: Dwarf reproduced at (4,3).
-Turn 21: Kill at (23,11), bonus 1.10.
-Turn 21: Kill at (17,17), bonus 1.00.
-Turn 21: Kill at (4,3), bonus 1.20.
-Turn 21: Kill at (17,0), bonus 1.10.
-Turn 21: Dwarf reproduced at (23,11).
-Turn 21: Dwarf reproduced at (17,17).
-Turn 21: Dwarf reproduced at (4,3).
+Turn 4: Kill at (0,14), bonus 1.10.
+Turn 4: Kill at (17,0), bonus 1.10.
+Turn 4: Dwarf reproduced at (0,14).
+Turn 4: Dwarf reproduced at (17,0).
+Turn 5: Kill at (0,14), bonus 1.10.
+Turn 5: Kill at (17,0), bonus 1.10.
+Turn 5: Dwarf reproduced at (0,14).
+Turn 5: Dwarf reproduced at (17,0).
+Turn 6: Kill at (0,14), bonus 1.10.
+Turn 6: Kill at (17,0), bonus 1.10.
+Turn 6: Dwarf reproduced at (0,14).
+Turn 6: Dwarf reproduced at (17,0).
+Turn 7: Kill at (0,14), bonus 1.10.
+Turn 7: Kill at (17,0), bonus 1.10.
+Turn 7: Kill at (16,5), bonus 1.10.
+Turn 7: Dwarf reproduced at (0,14).
+Turn 7: Dwarf reproduced at (17,0).
+Turn 7: Dwarf reproduced at (16,5).
+Turn 8: Kill at (0,14), bonus 1.10.
+Turn 8: Kill at (17,0), bonus 1.20.
+Turn 8: Kill at (16,5), bonus 1.10.
+Turn 8: Dwarf reproduced at (0,14).
+Turn 8: Dwarf reproduced at (17,0).
+Turn 8: Dwarf reproduced at (16,5).
+Turn 9: Kill at (0,14), bonus 1.10.
+Turn 9: Kill at (16,5), bonus 1.10.
+Turn 9: Kill at (17,0), bonus 1.20.
+Turn 9: Dwarf reproduced at (0,14).
+Turn 9: Dwarf reproduced at (16,5).
+Turn 9: Dwarf reproduced at (17,0).
+Turn 10: Resource at (19,18).
+Turn 10: Kill at (0,14), bonus 1.10.
+Turn 10: Kill at (16,5), bonus 1.10.
+Turn 10: Kill at (17,0), bonus 1.20.
+Turn 10: Orc reproduced at (19,18).
+Turn 10: Dwarf reproduced at (0,14).
+Turn 10: Dwarf reproduced at (16,5).
+Turn 10: Dwarf reproduced at (17,0).
+Turn 11: Kill at (0,14), bonus 1.10.
+Turn 11: Kill at (16,5), bonus 1.10.
+Turn 11: Kill at (17,0), bonus 1.20.
+Turn 11: Dwarf reproduced at (0,14).
+Turn 11: Dwarf reproduced at (16,5).
+Turn 11: Dwarf reproduced at (17,0).
+Turn 12: Kill at (0,14), bonus 1.10.
+Turn 12: Kill at (16,5), bonus 1.10.
+Turn 12: Kill at (17,0), bonus 1.20.
+Turn 12: Dwarf reproduced at (0,14).
+Turn 12: Dwarf reproduced at (16,5).
+Turn 12: Dwarf reproduced at (17,0).
+Turn 13: Kill at (0,14), bonus 1.10.
+Turn 13: Kill at (16,5), bonus 1.10.
+Turn 13: Kill at (17,0), bonus 1.20.
+Turn 13: Dwarf reproduced at (0,14).
+Turn 13: Dwarf reproduced at (16,5).
+Turn 13: Dwarf reproduced at (17,0).
+Turn 14: Kill at (0,14), bonus 1.10.
+Turn 14: Kill at (16,5), bonus 1.10.
+Turn 14: Kill at (17,0), bonus 1.20.
+Turn 14: Dwarf reproduced at (0,14).
+Turn 14: Dwarf reproduced at (16,5).
+Turn 14: Dwarf reproduced at (17,0).
+Turn 15: Kill at (0,14), bonus 1.10.
+Turn 15: Kill at (16,5), bonus 1.10.
+Turn 15: Kill at (17,0), bonus 1.20.
+Turn 15: Dwarf reproduced at (0,14).
+Turn 15: Dwarf reproduced at (16,5).
+Turn 15: Dwarf reproduced at (17,0).
+Turn 16: Kill at (0,14), bonus 1.10.
+Turn 16: Kill at (16,5), bonus 1.10.
+Turn 16: Kill at (17,0), bonus 1.20.
+Turn 16: Dwarf reproduced at (0,14).
+Turn 16: Dwarf reproduced at (16,5).
+Turn 16: Dwarf reproduced at (17,0).
+Turn 17: Kill at (0,14), bonus 1.10.
+Turn 17: Kill at (16,5), bonus 1.10.
+Turn 17: Kill at (17,0), bonus 1.20.
+Turn 17: Dwarf reproduced at (0,14).
+Turn 17: Dwarf reproduced at (16,5).
+Turn 17: Dwarf reproduced at (17,0).
+Turn 18: Kill at (0,14), bonus 1.10.
+Turn 18: Kill at (16,5), bonus 1.10.
+Turn 18: Kill at (17,0), bonus 1.20.
+Turn 18: Dwarf reproduced at (0,14).
+Turn 18: Dwarf reproduced at (16,5).
+Turn 18: Dwarf reproduced at (17,0).
+Turn 19: Kill at (0,14), bonus 1.10.
+Turn 19: Kill at (16,5), bonus 1.10.
+Turn 19: Kill at (17,0), bonus 1.20.
+Turn 19: Dwarf reproduced at (0,14).
+Turn 19: Dwarf reproduced at (16,5).
+Turn 19: Dwarf reproduced at (17,0).
+Turn 20: Kill at (0,14), bonus 1.10.
+Turn 20: Kill at (16,5), bonus 1.10.
+Turn 20: Kill at (17,0), bonus 1.20.
+Turn 20: Dwarf reproduced at (0,14).
+Turn 20: Dwarf reproduced at (16,5).
+Turn 20: Dwarf reproduced at (17,0).
+Turn 21: Kill at (0,14), bonus 1.10.
+Turn 21: Kill at (16,5), bonus 1.10.
+Turn 21: Kill at (17,0), bonus 1.20.
+Turn 21: Dwarf reproduced at (0,14).
+Turn 21: Dwarf reproduced at (16,5).
 Turn 21: Dwarf reproduced at (17,0).
-Turn 22: Kill at (23,11), bonus 1.10.
-Turn 22: Kill at (17,17), bonus 1.00.
-Turn 22: Kill at (4,3), bonus 1.20.
-Turn 22: Kill at (17,0), bonus 1.10.
-Turn 22: Dwarf reproduced at (23,11).
-Turn 22: Dwarf reproduced at (17,17).
-Turn 22: Dwarf reproduced at (4,3).
+Turn 22: Kill at (0,14), bonus 1.10.
+Turn 22: Kill at (16,5), bonus 1.10.
+Turn 22: Kill at (17,0), bonus 1.20.
+Turn 22: Dwarf reproduced at (0,14).
+Turn 22: Dwarf reproduced at (16,5).
 Turn 22: Dwarf reproduced at (17,0).
-Turn 23: Kill at (23,11), bonus 1.10.
-Turn 23: Kill at (17,17), bonus 1.00.
-Turn 23: Kill at (4,3), bonus 1.20.
-Turn 23: Kill at (17,0), bonus 1.10.
-Turn 23: Dwarf reproduced at (23,11).
-Turn 23: Dwarf reproduced at (17,17).
-Turn 23: Dwarf reproduced at (4,3).
+Turn 23: Kill at (0,14), bonus 1.10.
+Turn 23: Kill at (16,5), bonus 1.10.
+Turn 23: Kill at (17,0), bonus 1.20.
+Turn 23: Dwarf reproduced at (0,14).
+Turn 23: Dwarf reproduced at (16,5).
 Turn 23: Dwarf reproduced at (17,0).
-Turn 24: Kill at (23,11), bonus 1.10.
-Turn 24: Kill at (17,17), bonus 1.10.
-Turn 24: Kill at (4,3), bonus 1.20.
-Turn 24: Kill at (17,0), bonus 1.10.
-Turn 24: Dwarf reproduced at (23,11).
-Turn 24: Dwarf reproduced at (17,17).
-Turn 24: Dwarf reproduced at (4,3).
+Turn 24: Kill at (0,14), bonus 1.10.
+Turn 24: Kill at (16,5), bonus 1.10.
+Turn 24: Kill at (17,0), bonus 1.20.
+Turn 24: Dwarf reproduced at (0,14).
+Turn 24: Dwarf reproduced at (16,5).
 Turn 24: Dwarf reproduced at (17,0).
-Turn 25: Kill at (23,11), bonus 1.10.
-Turn 25: Kill at (17,17), bonus 1.10.
-Turn 25: Kill at (4,3), bonus 1.20.
-Turn 25: Kill at (17,0), bonus 1.10.
-Turn 25: Dwarf reproduced at (23,11).
-Turn 25: Dwarf reproduced at (17,17).
-Turn 25: Dwarf reproduced at (4,3).
+Turn 25: Kill at (0,14), bonus 1.10.
+Turn 25: Kill at (16,5), bonus 1.10.
+Turn 25: Kill at (17,0), bonus 1.20.
+Turn 25: Dwarf reproduced at (0,14).
+Turn 25: Dwarf reproduced at (16,5).
 Turn 25: Dwarf reproduced at (17,0).
-Turn 26: Kill at (23,11), bonus 1.10.
-Turn 26: Kill at (17,17), bonus 1.10.
-Turn 26: Kill at (4,3), bonus 1.20.
-Turn 26: Kill at (17,0), bonus 1.10.
-Turn 26: Dwarf reproduced at (23,11).
-Turn 26: Dwarf reproduced at (17,17).
-Turn 26: Dwarf reproduced at (4,3).
+Turn 26: Kill at (0,14), bonus 1.10.
+Turn 26: Kill at (16,5), bonus 1.10.
+Turn 26: Kill at (17,0), bonus 1.20.
+Turn 26: Dwarf reproduced at (0,14).
+Turn 26: Dwarf reproduced at (16,5).
 Turn 26: Dwarf reproduced at (17,0).
-Turn 27: Kill at (23,11), bonus 1.20.
-Turn 27: Kill at (17,17), bonus 1.10.
-Turn 27: Kill at (4,3), bonus 1.20.
-Turn 27: Kill at (17,0), bonus 1.10.
-Turn 27: Dwarf reproduced at (23,11).
-Turn 27: Dwarf reproduced at (17,17).
-Turn 27: Dwarf reproduced at (4,3).
+Turn 27: Kill at (0,14), bonus 1.10.
+Turn 27: Kill at (16,5), bonus 1.10.
+Turn 27: Kill at (17,0), bonus 1.20.
+Turn 27: Dwarf reproduced at (0,14).
+Turn 27: Dwarf reproduced at (16,5).
 Turn 27: Dwarf reproduced at (17,0).
-Turn 28: Kill at (23,11), bonus 1.20.
-Turn 28: Kill at (17,17), bonus 1.10.
-Turn 28: Kill at (4,3), bonus 1.20.
-Turn 28: Kill at (17,0), bonus 1.10.
-Turn 28: Dwarf reproduced at (23,11).
-Turn 28: Dwarf reproduced at (17,17).
-Turn 28: Dwarf reproduced at (4,3).
+Turn 28: Kill at (0,14), bonus 1.10.
+Turn 28: Kill at (16,5), bonus 1.10.
+Turn 28: Kill at (17,0), bonus 1.20.
+Turn 28: Dwarf reproduced at (0,14).
+Turn 28: Dwarf reproduced at (16,5).
 Turn 28: Dwarf reproduced at (17,0).
-Turn 29: Kill at (23,11), bonus 1.20.
-Turn 29: Kill at (17,17), bonus 1.10.
-Turn 29: Kill at (4,3), bonus 1.20.
-Turn 29: Kill at (17,0), bonus 1.10.
-Turn 29: Kill at (24,13), bonus 1.20.
-Turn 29: Dwarf reproduced at (23,11).
-Turn 29: Dwarf reproduced at (17,17).
-Turn 29: Dwarf reproduced at (4,3).
+Turn 29: Kill at (0,14), bonus 1.10.
+Turn 29: Kill at (16,5), bonus 1.10.
+Turn 29: Kill at (17,0), bonus 1.20.
+Turn 29: Dwarf reproduced at (0,14).
+Turn 29: Dwarf reproduced at (16,5).
 Turn 29: Dwarf reproduced at (17,0).
-Turn 29: Dwarf reproduced at (24,13).
-Turn 30: Kill at (23,11), bonus 1.20.
-Turn 30: Kill at (17,17), bonus 1.10.
-Turn 30: Kill at (4,3), bonus 1.20.
-Turn 30: Kill at (17,0), bonus 1.10.
-Turn 30: Kill at (24,13), bonus 1.20.
-Turn 30: Dwarf reproduced at (23,11).
-Turn 30: Dwarf reproduced at (17,17).
-Turn 30: Dwarf reproduced at (4,3).
+Turn 30: Kill at (0,14), bonus 1.10.
+Turn 30: Kill at (16,5), bonus 1.10.
+Turn 30: Kill at (17,0), bonus 1.20.
+Turn 30: Dwarf reproduced at (0,14).
+Turn 30: Dwarf reproduced at (16,5).
 Turn 30: Dwarf reproduced at (17,0).
-Turn 30: Dwarf reproduced at (24,13).
-Turn 31: Kill at (23,11), bonus 1.20.
-Turn 31: Kill at (17,17), bonus 1.10.
-Turn 31: Kill at (4,3), bonus 1.20.
-Turn 31: Kill at (17,0), bonus 1.10.
-Turn 31: Kill at (24,13), bonus 1.20.
-Turn 31: Dwarf reproduced at (23,11).
-Turn 31: Dwarf reproduced at (17,17).
-Turn 31: Dwarf reproduced at (4,3).
+Turn 31: Kill at (0,14), bonus 1.10.
+Turn 31: Kill at (16,5), bonus 1.10.
+Turn 31: Kill at (17,0), bonus 1.20.
+Turn 31: Dwarf reproduced at (0,14).
+Turn 31: Dwarf reproduced at (16,5).
 Turn 31: Dwarf reproduced at (17,0).
-Turn 31: Dwarf reproduced at (24,13).
-Turn 32: Kill at (23,11), bonus 1.20.
-Turn 32: Kill at (17,17), bonus 1.10.
-Turn 32: Kill at (4,3), bonus 1.20.
-Turn 32: Kill at (17,0), bonus 1.10.
-Turn 32: Kill at (24,13), bonus 1.20.
-Turn 32: Dwarf reproduced at (23,11).
-Turn 32: Dwarf reproduced at (17,17).
-Turn 32: Dwarf reproduced at (4,3).
+Turn 32: Resource at (24,12).
+Turn 32: Kill at (0,14), bonus 1.10.
+Turn 32: Kill at (16,5), bonus 1.10.
+Turn 32: Kill at (17,0), bonus 1.20.
+Turn 32: Orc reproduced at (24,12).
+Turn 32: Dwarf reproduced at (0,14).
+Turn 32: Dwarf reproduced at (16,5).
 Turn 32: Dwarf reproduced at (17,0).
-Turn 32: Dwarf reproduced at (24,13).
-Turn 33: Kill at (23,11), bonus 1.20.
-Turn 33: Kill at (17,17), bonus 1.10.
-Turn 33: Kill at (4,3), bonus 1.20.
-Turn 33: Kill at (17,0), bonus 1.10.
-Turn 33: Kill at (24,13), bonus 1.20.
-Turn 33: Dwarf reproduced at (23,11).
-Turn 33: Dwarf reproduced at (17,17).
-Turn 33: Dwarf reproduced at (4,3).
+Turn 33: Kill at (24,12), bonus 1.00.
+Turn 33: Kill at (0,14), bonus 1.10.
+Turn 33: Kill at (16,5), bonus 1.10.
+Turn 33: Kill at (17,0), bonus 1.20.
+Turn 33: Dwarf reproduced at (0,14).
+Turn 33: Dwarf reproduced at (16,5).
 Turn 33: Dwarf reproduced at (17,0).
-Turn 33: Dwarf reproduced at (24,13).
-Turn 34: Kill at (23,11), bonus 1.20.
-Turn 34: Kill at (17,17), bonus 1.10.
-Turn 34: Kill at (4,3), bonus 1.20.
-Turn 34: Kill at (17,0), bonus 1.10.
-Turn 34: Kill at (24,13), bonus 1.20.
-Turn 34: Dwarf reproduced at (23,11).
-Turn 34: Dwarf reproduced at (17,17).
-Turn 34: Dwarf reproduced at (4,3).
+Turn 34: Kill at (24,12), bonus 1.00.
+Turn 34: Kill at (0,14), bonus 1.10.
+Turn 34: Kill at (16,5), bonus 1.10.
+Turn 34: Kill at (17,0), bonus 1.20.
+Turn 34: Dwarf reproduced at (24,12).
+Turn 34: Dwarf reproduced at (0,14).
+Turn 34: Dwarf reproduced at (16,5).
 Turn 34: Dwarf reproduced at (17,0).
-Turn 34: Dwarf reproduced at (24,13).
-Turn 35: Kill at (23,11), bonus 1.20.
-Turn 35: Kill at (17,17), bonus 1.10.
-Turn 35: Kill at (4,3), bonus 1.20.
-Turn 35: Kill at (17,0), bonus 1.10.
-Turn 35: Kill at (24,13), bonus 1.20.
-Turn 35: Dwarf reproduced at (23,11).
-Turn 35: Dwarf reproduced at (17,17).
-Turn 35: Dwarf reproduced at (4,3).
+Turn 35: Kill at (24,12), bonus 1.00.
+Turn 35: Kill at (0,14), bonus 1.10.
+Turn 35: Kill at (16,5), bonus 1.10.
+Turn 35: Kill at (17,0), bonus 1.20.
+Turn 35: Dwarf reproduced at (24,12).
+Turn 35: Dwarf reproduced at (0,14).
+Turn 35: Dwarf reproduced at (16,5).
 Turn 35: Dwarf reproduced at (17,0).
-Turn 35: Dwarf reproduced at (24,13).
-Turn 36: Kill at (23,11), bonus 1.20.
-Turn 36: Kill at (17,17), bonus 1.10.
-Turn 36: Kill at (4,3), bonus 1.20.
-Turn 36: Kill at (17,0), bonus 1.10.
-Turn 36: Kill at (24,13), bonus 1.20.
-Turn 36: Dwarf reproduced at (23,11).
-Turn 36: Dwarf reproduced at (17,17).
-Turn 36: Dwarf reproduced at (4,3).
+Turn 36: Kill at (24,12), bonus 1.00.
+Turn 36: Kill at (0,14), bonus 1.10.
+Turn 36: Kill at (16,5), bonus 1.10.
+Turn 36: Kill at (17,0), bonus 1.20.
+Turn 36: Dwarf reproduced at (24,12).
+Turn 36: Dwarf reproduced at (0,14).
+Turn 36: Dwarf reproduced at (16,5).
 Turn 36: Dwarf reproduced at (17,0).
-Turn 36: Dwarf reproduced at (24,13).
-Turn 37: Kill at (23,11), bonus 1.20.
-Turn 37: Kill at (17,17), bonus 1.10.
-Turn 37: Kill at (4,3), bonus 1.20.
-Turn 37: Kill at (17,0), bonus 1.10.
-Turn 37: Kill at (24,13), bonus 1.20.
-Turn 37: Dwarf reproduced at (23,11).
-Turn 37: Dwarf reproduced at (17,17).
-Turn 37: Dwarf reproduced at (4,3).
+Turn 37: Kill at (24,12), bonus 1.00.
+Turn 37: Kill at (0,14), bonus 1.10.
+Turn 37: Kill at (16,5), bonus 1.10.
+Turn 37: Kill at (17,0), bonus 1.20.
+Turn 37: Dwarf reproduced at (24,12).
+Turn 37: Dwarf reproduced at (0,14).
+Turn 37: Dwarf reproduced at (16,5).
 Turn 37: Dwarf reproduced at (17,0).
-Turn 37: Dwarf reproduced at (24,13).
-Turn 38: Kill at (23,11), bonus 1.20.
-Turn 38: Kill at (17,17), bonus 1.10.
-Turn 38: Kill at (4,3), bonus 1.20.
-Turn 38: Kill at (17,0), bonus 1.10.
-Turn 38: Kill at (24,13), bonus 1.20.
-Turn 38: Dwarf reproduced at (23,11).
-Turn 38: Dwarf reproduced at (17,17).
-Turn 38: Dwarf reproduced at (4,3).
+Turn 38: Kill at (24,12), bonus 1.00.
+Turn 38: Kill at (0,14), bonus 1.10.
+Turn 38: Kill at (16,5), bonus 1.10.
+Turn 38: Kill at (17,0), bonus 1.20.
+Turn 38: Dwarf reproduced at (24,12).
+Turn 38: Dwarf reproduced at (0,14).
+Turn 38: Dwarf reproduced at (16,5).
 Turn 38: Dwarf reproduced at (17,0).
-Turn 38: Dwarf reproduced at (24,13).
-Turn 39: Kill at (23,11), bonus 1.20.
-Turn 39: Kill at (17,17), bonus 1.10.
-Turn 39: Kill at (4,3), bonus 1.20.
-Turn 39: Kill at (17,0), bonus 1.10.
-Turn 39: Kill at (24,13), bonus 1.20.
-Turn 39: Dwarf reproduced at (23,11).
-Turn 39: Dwarf reproduced at (17,17).
-Turn 39: Dwarf reproduced at (4,3).
+Turn 39: Kill at (24,12), bonus 1.00.
+Turn 39: Kill at (0,14), bonus 1.10.
+Turn 39: Kill at (16,5), bonus 1.10.
+Turn 39: Kill at (17,0), bonus 1.20.
+Turn 39: Dwarf reproduced at (24,12).
+Turn 39: Dwarf reproduced at (0,14).
+Turn 39: Dwarf reproduced at (16,5).
 Turn 39: Dwarf reproduced at (17,0).
-Turn 39: Dwarf reproduced at (24,13).
-Turn 40: Kill at (23,11), bonus 1.20.
-Turn 40: Kill at (17,17), bonus 1.10.
-Turn 40: Kill at (4,3), bonus 1.20.
-Turn 40: Kill at (17,0), bonus 1.10.
-Turn 40: Kill at (24,13), bonus 1.20.
-Turn 40: Dwarf reproduced at (23,11).
-Turn 40: Dwarf reproduced at (17,17).
-Turn 40: Dwarf reproduced at (4,3).
+Turn 40: Kill at (24,12), bonus 1.00.
+Turn 40: Kill at (0,14), bonus 1.10.
+Turn 40: Kill at (16,5), bonus 1.10.
+Turn 40: Kill at (17,0), bonus 1.20.
+Turn 40: Dwarf reproduced at (24,12).
+Turn 40: Dwarf reproduced at (0,14).
+Turn 40: Dwarf reproduced at (16,5).
 Turn 40: Dwarf reproduced at (17,0).
-Turn 40: Dwarf reproduced at (24,13).
-Turn 41: Kill at (23,11), bonus 1.20.
-Turn 41: Kill at (17,17), bonus 1.10.
-Turn 41: Kill at (4,3), bonus 1.20.
-Turn 41: Kill at (17,0), bonus 1.10.
-Turn 41: Kill at (24,13), bonus 1.20.
-Turn 41: Dwarf reproduced at (23,11).
-Turn 41: Dwarf reproduced at (17,17).
-Turn 41: Dwarf reproduced at (4,3).
+Turn 41: Kill at (24,12), bonus 1.00.
+Turn 41: Kill at (0,14), bonus 1.10.
+Turn 41: Kill at (16,5), bonus 1.10.
+Turn 41: Kill at (17,0), bonus 1.20.
+Turn 41: Dwarf reproduced at (24,12).
+Turn 41: Dwarf reproduced at (0,14).
+Turn 41: Dwarf reproduced at (16,5).
 Turn 41: Dwarf reproduced at (17,0).
-Turn 41: Dwarf reproduced at (24,13).
-Turn 42: Kill at (23,11), bonus 1.20.
-Turn 42: Kill at (17,17), bonus 1.10.
-Turn 42: Kill at (4,3), bonus 1.20.
-Turn 42: Kill at (17,0), bonus 1.10.
-Turn 42: Kill at (24,13), bonus 1.20.
-Turn 42: Dwarf reproduced at (23,11).
-Turn 42: Dwarf reproduced at (17,17).
-Turn 42: Dwarf reproduced at (4,3).
+Turn 42: Kill at (24,12), bonus 1.00.
+Turn 42: Kill at (0,14), bonus 1.10.
+Turn 42: Kill at (16,5), bonus 1.10.
+Turn 42: Kill at (17,0), bonus 1.20.
+Turn 42: Dwarf reproduced at (24,12).
+Turn 42: Dwarf reproduced at (0,14).
+Turn 42: Dwarf reproduced at (16,5).
 Turn 42: Dwarf reproduced at (17,0).
-Turn 42: Dwarf reproduced at (24,13).
-Turn 43: Kill at (23,11), bonus 1.20.
-Turn 43: Kill at (17,17), bonus 1.10.
-Turn 43: Kill at (4,3), bonus 1.20.
-Turn 43: Kill at (17,0), bonus 1.10.
-Turn 43: Kill at (24,13), bonus 1.20.
-Turn 43: Dwarf reproduced at (23,11).
-Turn 43: Dwarf reproduced at (17,17).
-Turn 43: Dwarf reproduced at (4,3).
+Turn 43: Kill at (24,12), bonus 1.00.
+Turn 43: Kill at (0,14), bonus 1.10.
+Turn 43: Kill at (16,5), bonus 1.10.
+Turn 43: Kill at (17,0), bonus 1.20.
+Turn 43: Dwarf reproduced at (24,12).
+Turn 43: Dwarf reproduced at (0,14).
+Turn 43: Dwarf reproduced at (16,5).
 Turn 43: Dwarf reproduced at (17,0).
-Turn 43: Dwarf reproduced at (24,13).
-Turn 44: Kill at (23,11), bonus 1.20.
-Turn 44: Kill at (17,17), bonus 1.10.
-Turn 44: Kill at (4,3), bonus 1.20.
-Turn 44: Kill at (17,0), bonus 1.10.
-Turn 44: Kill at (24,13), bonus 1.20.
-Turn 44: Dwarf reproduced at (23,11).
-Turn 44: Dwarf reproduced at (17,17).
-Turn 44: Dwarf reproduced at (4,3).
+Turn 44: Kill at (24,12), bonus 1.00.
+Turn 44: Kill at (0,14), bonus 1.10.
+Turn 44: Kill at (16,5), bonus 1.10.
+Turn 44: Kill at (17,0), bonus 1.20.
+Turn 44: Dwarf reproduced at (24,12).
+Turn 44: Dwarf reproduced at (0,14).
+Turn 44: Dwarf reproduced at (16,5).
 Turn 44: Dwarf reproduced at (17,0).
-Turn 44: Dwarf reproduced at (24,13).
-Turn 45: Kill at (23,11), bonus 1.20.
-Turn 45: Kill at (17,17), bonus 1.10.
-Turn 45: Kill at (4,3), bonus 1.20.
-Turn 45: Kill at (17,0), bonus 1.10.
-Turn 45: Kill at (24,13), bonus 1.20.
-Turn 45: Dwarf reproduced at (23,11).
-Turn 45: Dwarf reproduced at (17,17).
-Turn 45: Dwarf reproduced at (4,3).
+Turn 45: Resource at (4,0).
+Turn 45: Kill at (24,12), bonus 1.00.
+Turn 45: Kill at (0,14), bonus 1.10.
+Turn 45: Kill at (16,5), bonus 1.10.
+Turn 45: Kill at (17,0), bonus 1.20.
+Turn 45: Dwarf reproduced at (24,12).
+Turn 45: Dwarf reproduced at (0,14).
+Turn 45: Dwarf reproduced at (16,5).
+Turn 45: Dwarf reproduced at (4,0).
 Turn 45: Dwarf reproduced at (17,0).
-Turn 45: Dwarf reproduced at (24,13).
-Turn 46: Kill at (23,11), bonus 1.20.
-Turn 46: Kill at (17,17), bonus 1.10.
-Turn 46: Kill at (4,3), bonus 1.20.
-Turn 46: Kill at (17,0), bonus 1.10.
-Turn 46: Kill at (24,13), bonus 1.20.
-Turn 46: Dwarf reproduced at (23,11).
-Turn 46: Dwarf reproduced at (17,17).
-Turn 46: Dwarf reproduced at (4,3).
+Turn 46: Kill at (24,12), bonus 1.00.
+Turn 46: Kill at (0,14), bonus 1.10.
+Turn 46: Kill at (16,5), bonus 1.10.
+Turn 46: Kill at (4,0), bonus 1.00.
+Turn 46: Kill at (17,0), bonus 1.20.
+Turn 46: Dwarf reproduced at (24,12).
+Turn 46: Dwarf reproduced at (0,14).
+Turn 46: Dwarf reproduced at (16,5).
+Turn 46: Dwarf reproduced at (4,0).
 Turn 46: Dwarf reproduced at (17,0).
-Turn 46: Dwarf reproduced at (24,13).
-Turn 47: Kill at (23,11), bonus 1.20.
-Turn 47: Kill at (17,17), bonus 1.10.
-Turn 47: Kill at (4,3), bonus 1.20.
-Turn 47: Kill at (17,0), bonus 1.10.
-Turn 47: Kill at (24,13), bonus 1.20.
-Turn 47: Dwarf reproduced at (23,11).
-Turn 47: Dwarf reproduced at (17,17).
-Turn 47: Dwarf reproduced at (4,3).
+Turn 47: Kill at (24,12), bonus 1.00.
+Turn 47: Kill at (0,14), bonus 1.10.
+Turn 47: Kill at (16,5), bonus 1.10.
+Turn 47: Kill at (4,0), bonus 1.00.
+Turn 47: Kill at (17,0), bonus 1.20.
+Turn 47: Dwarf reproduced at (24,12).
+Turn 47: Dwarf reproduced at (0,14).
+Turn 47: Dwarf reproduced at (16,5).
+Turn 47: Dwarf reproduced at (4,0).
 Turn 47: Dwarf reproduced at (17,0).
-Turn 47: Dwarf reproduced at (24,13).
-Turn 48: Kill at (23,11), bonus 1.20.
-Turn 48: Kill at (17,17), bonus 1.10.
-Turn 48: Kill at (4,3), bonus 1.20.
-Turn 48: Kill at (17,0), bonus 1.10.
-Turn 48: Kill at (24,13), bonus 1.20.
-Turn 48: Dwarf reproduced at (23,11).
-Turn 48: Dwarf reproduced at (17,17).
-Turn 48: Dwarf reproduced at (4,3).
+Turn 48: Kill at (24,12), bonus 1.00.
+Turn 48: Kill at (0,14), bonus 1.10.
+Turn 48: Kill at (16,5), bonus 1.10.
+Turn 48: Kill at (4,0), bonus 1.00.
+Turn 48: Kill at (17,0), bonus 1.20.
+Turn 48: Dwarf reproduced at (24,12).
+Turn 48: Dwarf reproduced at (0,14).
+Turn 48: Dwarf reproduced at (16,5).
+Turn 48: Dwarf reproduced at (4,0).
 Turn 48: Dwarf reproduced at (17,0).
-Turn 48: Dwarf reproduced at (24,13).
-Turn 49: Kill at (23,11), bonus 1.20.
-Turn 49: Kill at (17,17), bonus 1.10.
-Turn 49: Kill at (4,3), bonus 1.20.
-Turn 49: Kill at (17,0), bonus 1.10.
-Turn 49: Kill at (24,13), bonus 1.20.
-Turn 49: Dwarf reproduced at (23,11).
-Turn 49: Dwarf reproduced at (17,17).
-Turn 49: Dwarf reproduced at (4,3).
+Turn 49: Kill at (24,12), bonus 1.00.
+Turn 49: Kill at (0,14), bonus 1.10.
+Turn 49: Kill at (16,5), bonus 1.10.
+Turn 49: Kill at (4,0), bonus 1.00.
+Turn 49: Kill at (17,0), bonus 1.20.
+Turn 49: Dwarf reproduced at (24,12).
+Turn 49: Dwarf reproduced at (0,14).
+Turn 49: Dwarf reproduced at (16,5).
+Turn 49: Dwarf reproduced at (4,0).
 Turn 49: Dwarf reproduced at (17,0).
-Turn 49: Dwarf reproduced at (24,13).
 Turn 50: Reinforcement.
-Turn 50: Kill at (5,10), bonus 1.00.
-Turn 50: Orc reproduced at (5,10).
-Turn 50: Dwarf reproduced at (23,10).
-Turn 50: Dwarf reproduced at (16,16).
-Turn 50: Dwarf reproduced at (4,4).
-Turn 50: Dwarf reproduced at (16,1).
-Turn 50: Dwarf reproduced at (23,13).
-Turn 51: Kill at (5,10), bonus 1.00.
-Turn 51: Orc reproduced at (5,10).
-Turn 52: Kill at (5,10), bonus 1.00.
-Turn 59: Kill at (3,4), bonus 1.00.
-Turn 59: Orc reproduced at (3,4).
-Turn 60: Kill at (3,4), bonus 1.00.
-Turn 61: Kill at (22,7), bonus 1.00.
-Turn 61: Orc reproduced at (22,7).
-Turn 62: Resource at (8,2).
-Turn 62: Kill at (22,7), bonus 1.00.
-Turn 62: Orc reproduced at (8,2).
-Turn 62: Orc reproduced at (22,7).
-Turn 63: Kill at (8,2), bonus 1.00.
-Turn 63: Kill at (22,7), bonus 1.00.
-Turn 63: Orc reproduced at (8,2).
-Turn 64: Kill at (8,2), bonus 1.00.
-Turn 64: Kill at (0,5), bonus 1.00.
-Turn 64: Orc reproduced at (0,5).
-Turn 65: Kill at (0,5), bonus 1.00.
-Turn 65: Orc reproduced at (0,5).
-Turn 66: Kill at (0,5), bonus 1.00.
-Turn 69: Kill at (24,11), bonus 1.00.
-Turn 69: Orc reproduced at (24,11).
-Turn 70: Kill at (24,11), bonus 1.00.
-Turn 71: Kill at (24,11), bonus 1.00.
-Turn 71: Orc reproduced at (24,11).
-Turn 72: Kill at (24,11), bonus 1.10.
-Turn 72: Orc reproduced at (24,11).
-Turn 73: Kill at (24,11), bonus 1.20.
-Turn 73: Kill at (24,11), bonus 1.20.
-Turn 73: Orc reproduced at (24,11).
-Turn 74: Kill at (24,11), bonus 1.20.
-Turn 74: Kill at (2,0), bonus 1.00.
-Turn 74: Kill at (24,11), bonus 1.20.
-Turn 74: Orc reproduced at (24,11).
-Turn 74: Orc reproduced at (2,0).
-Turn 74: Orc reproduced at (24,11).
-Turn 75: Kill at (24,11), bonus 1.20.
-Turn 75: Kill at (2,0), bonus 1.00.
-Turn 75: Kill at (24,11), bonus 1.20.
-Turn 75: Orc reproduced at (24,11).
-Turn 75: Orc reproduced at (24,11).
-Turn 76: Kill at (24,11), bonus 1.20.
-Turn 76: Kill at (24,11), bonus 1.20.
-Turn 83: Kill at (0,0), bonus 1.00.
-Turn 83: Orc reproduced at (0,0).
-Turn 84: Kill at (0,0), bonus 1.00.
-Turn 84: Orc reproduced at (0,0).
-Turn 85: Kill at (0,0), bonus 1.00.
-Turn 87: Kill at (0,0), bonus 1.00.
-Turn 87: Orc reproduced at (0,0).
-Turn 88: Kill at (0,0), bonus 1.00.
-Turn 89: Kill at (18,19), bonus 1.00.
-Turn 89: Orc reproduced at (18,19).
-Turn 90: Resource at (13,23).
-Turn 90: Kill at (18,19), bonus 1.00.
-Turn 92: Resource at (15,24).
-Turn 99: Kill at (23,24), bonus 1.00.
-Turn 99: Orc reproduced at (23,24).
+Turn 50: Dwarf reproduced at (23,12).
+Turn 50: Dwarf reproduced at (1,14).
+Turn 50: Dwarf reproduced at (15,5).
+Turn 50: Dwarf reproduced at (3,1).
+Turn 50: Dwarf reproduced at (18,0).
+Turn 53: Resource at (3,13).
+Turn 53: Dwarf reproduced at (3,13).
+Turn 55: Kill at (22,24), bonus 1.10.
+Turn 55: Orc reproduced at (22,24).
+Turn 56: Kill at (24,24), bonus 1.10.
+Turn 56: Kill at (22,24), bonus 1.10.
+Turn 56: Orc reproduced at (24,24).
+Turn 57: Kill at (24,24), bonus 1.10.
+Turn 57: Orc reproduced at (24,24).
+Turn 58: Kill at (24,24), bonus 1.10.
+Turn 58: Kill at (15,24), bonus 1.00.
+Turn 58: Orc reproduced at (15,24).
+Turn 59: Kill at (15,24), bonus 1.00.
+Turn 59: Orc reproduced at (15,24).
+Turn 60: Kill at (15,24), bonus 1.00.
+Turn 64: Resource at (1,0).
+Turn 64: Kill at (11,24), bonus 1.10.
+Turn 64: Kill at (10,24), bonus 1.10.
+Turn 64: Orc reproduced at (11,24).
+Turn 64: Orc reproduced at (10,24).
+Turn 65: Kill at (11,24), bonus 1.10.
+Turn 65: Kill at (10,24), bonus 1.10.
+Turn 65: Orc reproduced at (11,24).
+Turn 66: Kill at (11,24), bonus 1.10.
+Turn 68: Kill at (1,24), bonus 1.00.
+Turn 68: Orc reproduced at (1,24).
+Turn 69: Kill at (1,24), bonus 1.00.
+Turn 70: Kill at (1,24), bonus 1.00.
+Turn 70: Kill at (15,24), bonus 1.20.
+Turn 70: Orc reproduced at (1,24).
+Turn 70: Orc reproduced at (15,24).
+Turn 71: Kill at (15,24), bonus 1.20.
+Turn 71: Kill at (1,24), bonus 1.00.
+Turn 71: Kill at (6,1), bonus 1.10.
+Turn 71: Kill at (5,1), bonus 1.10.
+Turn 71: Orc reproduced at (15,24).
+Turn 71: Orc reproduced at (1,24).
+Turn 71: Orc reproduced at (6,1).
+Turn 71: Orc reproduced at (5,1).
+Turn 72: Kill at (15,24), bonus 1.20.
+Turn 72: Kill at (1,24), bonus 1.00.
+Turn 72: Kill at (6,1), bonus 1.10.
+Turn 72: Kill at (5,1), bonus 1.10.
+Turn 72: Orc reproduced at (15,24).
+Turn 72: Orc reproduced at (6,1).
+Turn 72: Orc reproduced at (5,1).
+Turn 73: Kill at (15,24), bonus 1.20.
+Turn 73: Kill at (1,24), bonus 1.00.
+Turn 73: Kill at (6,1), bonus 1.10.
+Turn 73: Kill at (5,10), bonus 1.00.
+Turn 73: Kill at (5,1), bonus 1.10.
+Turn 73: Orc reproduced at (1,24).
+Turn 73: Orc reproduced at (5,10).
+Turn 74: Kill at (1,24), bonus 1.00.
+Turn 74: Kill at (5,10), bonus 1.00.
+Turn 75: Kill at (1,24), bonus 1.00.
+Turn 75: Orc reproduced at (1,24).
+Turn 76: Kill at (1,24), bonus 1.00.
+Turn 76: Orc reproduced at (1,24).
+Turn 77: Kill at (1,24), bonus 1.00.
+Turn 77: Kill at (12,0), bonus 1.20.
+Turn 77: Orc reproduced at (12,0).
+Turn 78: Kill at (12,0), bonus 1.30.
+Turn 78: Orc reproduced at (12,0).
+Turn 79: Kill at (12,0), bonus 1.30.
+Turn 79: Orc reproduced at (12,0).
+Turn 80: Kill at (12,0), bonus 1.30.
+Turn 80: Orc reproduced at (12,0).
+Turn 81: Kill at (12,0), bonus 1.30.
+Turn 81: Orc reproduced at (12,0).
+Turn 82: Kill at (12,0), bonus 1.30.
+Turn 82: Orc reproduced at (12,0).
+Turn 83: Kill at (12,0), bonus 1.30.
+Turn 86: Kill at (3,6), bonus 1.10.
+Turn 86: Orc reproduced at (3,6).
+Turn 87: Kill at (3,6), bonus 1.10.
+Turn 87: Orc reproduced at (3,6).
+Turn 88: Kill at (3,6), bonus 1.10.
+Turn 88: Orc reproduced at (3,6).
+Turn 89: Kill at (3,6), bonus 1.10.
+Turn 97: Kill at (0,14), bonus 1.00.
+Turn 99: Kill at (0,24), bonus 1.00.
 Turn 100: Reinforcement.
-Turn 100: Orc reproduced at (2,9).
-Turn 100: Orc reproduced at (10,0).
-Turn 100: Orc reproduced at (18,15).
-Turn 102: Kill at (14,12), bonus 1.10.
-Turn 107: Resource at (20,1).
-Turn 107: Dwarf reproduced at (20,1).
-Turn 108: Kill at (20,1), bonus 1.00.
-Turn 108: Dwarf reproduced at (20,1).
-Turn 109: Resource at (23,8).
-Turn 109: Kill at (20,1), bonus 1.10.
-Turn 109: Orc reproduced at (23,8).
-Turn 109: Dwarf reproduced at (20,1).
-Turn 110: Kill at (20,1), bonus 1.10.
-Turn 110: Dwarf reproduced at (20,1).
-Turn 111: Kill at (20,1), bonus 1.10.
-Turn 111: Dwarf reproduced at (20,1).
-Turn 112: Kill at (20,1), bonus 1.10.
-Turn 112: Dwarf reproduced at (20,1).
-Turn 113: Kill at (20,1), bonus 1.10.
-Turn 113: Dwarf reproduced at (20,1).
-Turn 114: Kill at (1,3), bonus 1.30.
-Turn 114: Kill at (20,1), bonus 1.10.
-Turn 114: Dwarf reproduced at (1,3).
-Turn 114: Dwarf reproduced at (20,1).
-Turn 115: Kill at (1,3), bonus 1.30.
-Turn 115: Kill at (24,18), bonus 1.00.
-Turn 115: Kill at (20,1), bonus 1.10.
-Turn 115: Dwarf reproduced at (1,3).
-Turn 115: Dwarf reproduced at (24,18).
-Turn 115: Dwarf reproduced at (20,1).
-Turn 116: Resource at (6,5).
-Turn 116: Kill at (1,3), bonus 1.30.
-Turn 116: Kill at (0,24), bonus 1.00.
-Turn 116: Kill at (24,18), bonus 1.00.
-Turn 116: Kill at (20,1), bonus 1.10.
-Turn 116: Dwarf reproduced at (1,3).
-Turn 116: Dwarf reproduced at (24,18).
-Turn 116: Dwarf reproduced at (20,1).
-Turn 117: Kill at (1,3), bonus 1.30.
-Turn 117: Kill at (0,24), bonus 1.00.
-Turn 117: Kill at (24,18), bonus 1.00.
-Turn 117: Kill at (20,1), bonus 1.10.
-Turn 117: Dwarf reproduced at (1,3).
-Turn 117: Dwarf reproduced at (0,24).
-Turn 117: Dwarf reproduced at (24,18).
-Turn 117: Dwarf reproduced at (20,1).
-Turn 118: Kill at (1,3), bonus 1.30.
-Turn 118: Kill at (0,24), bonus 1.00.
-Turn 118: Kill at (24,18), bonus 1.00.
-Turn 118: Kill at (20,1), bonus 1.10.
-Turn 118: Dwarf reproduced at (1,3).
-Turn 118: Dwarf reproduced at (0,24).
-Turn 118: Dwarf reproduced at (24,18).
-Turn 118: Dwarf reproduced at (20,1).
-Turn 119: Kill at (1,3), bonus 1.30.
-Turn 119: Kill at (0,24), bonus 1.00.
-Turn 119: Kill at (24,18), bonus 1.00.
-Turn 119: Kill at (20,1), bonus 1.10.
-Turn 119: Dwarf reproduced at (1,3).
-Turn 119: Dwarf reproduced at (0,24).
-Turn 119: Dwarf reproduced at (24,18).
-Turn 119: Dwarf reproduced at (20,1).
-Turn 120: Kill at (1,3), bonus 1.30.
-Turn 120: Kill at (0,24), bonus 1.00.
-Turn 120: Kill at (24,18), bonus 1.00.
-Turn 120: Kill at (20,1), bonus 1.10.
-Turn 120: Dwarf reproduced at (1,3).
-Turn 120: Dwarf reproduced at (0,24).
-Turn 120: Dwarf reproduced at (24,18).
-Turn 120: Dwarf reproduced at (20,1).
-Turn 121: Kill at (1,3), bonus 1.30.
-Turn 121: Kill at (0,24), bonus 1.00.
-Turn 121: Kill at (24,18), bonus 1.00.
-Turn 121: Kill at (20,1), bonus 1.10.
-Turn 121: Dwarf reproduced at (1,3).
-Turn 121: Dwarf reproduced at (0,24).
-Turn 121: Dwarf reproduced at (24,18).
-Turn 121: Dwarf reproduced at (20,1).
-Turn 122: Kill at (1,3), bonus 1.30.
-Turn 122: Kill at (0,24), bonus 1.00.
-Turn 122: Kill at (24,18), bonus 1.00.
-Turn 122: Kill at (20,1), bonus 1.10.
-Turn 122: Dwarf reproduced at (1,3).
-Turn 122: Dwarf reproduced at (0,24).
-Turn 122: Dwarf reproduced at (24,18).
-Turn 122: Dwarf reproduced at (20,1).
-Turn 123: Kill at (1,3), bonus 1.40.
-Turn 123: Kill at (0,24), bonus 1.00.
-Turn 123: Kill at (24,18), bonus 1.10.
-Turn 123: Kill at (20,1), bonus 1.10.
-Turn 123: Dwarf reproduced at (1,3).
-Turn 123: Dwarf reproduced at (0,24).
-Turn 123: Dwarf reproduced at (24,18).
-Turn 123: Dwarf reproduced at (20,1).
-Turn 124: Kill at (1,3), bonus 1.40.
-Turn 124: Kill at (0,24), bonus 1.00.
-Turn 124: Kill at (24,18), bonus 1.10.
-Turn 124: Kill at (20,1), bonus 1.10.
-Turn 124: Dwarf reproduced at (1,3).
-Turn 124: Dwarf reproduced at (0,24).
-Turn 124: Dwarf reproduced at (24,18).
-Turn 124: Dwarf reproduced at (20,1).
-Turn 125: Kill at (1,3), bonus 1.40.
-Turn 125: Kill at (0,24), bonus 1.00.
-Turn 125: Kill at (24,18), bonus 1.10.
-Turn 125: Kill at (20,1), bonus 1.10.
-Turn 125: Dwarf reproduced at (1,3).
-Turn 125: Dwarf reproduced at (0,24).
-Turn 125: Dwarf reproduced at (24,18).
-Turn 125: Dwarf reproduced at (20,1).
-Turn 126: Kill at (1,3), bonus 1.40.
-Turn 126: Kill at (0,24), bonus 1.00.
-Turn 126: Kill at (24,18), bonus 1.10.
-Turn 126: Kill at (20,1), bonus 1.10.
-Turn 126: Dwarf reproduced at (1,3).
-Turn 126: Dwarf reproduced at (0,24).
-Turn 126: Dwarf reproduced at (24,18).
-Turn 126: Dwarf reproduced at (20,1).
-Turn 127: Kill at (1,3), bonus 1.40.
-Turn 127: Kill at (0,24), bonus 1.00.
-Turn 127: Kill at (24,18), bonus 1.10.
-Turn 127: Kill at (20,1), bonus 1.10.
-Turn 127: Dwarf reproduced at (1,3).
-Turn 127: Dwarf reproduced at (0,24).
-Turn 127: Dwarf reproduced at (24,18).
-Turn 127: Dwarf reproduced at (20,1).
-Turn 128: Kill at (1,3), bonus 1.40.
-Turn 128: Kill at (0,24), bonus 1.00.
-Turn 128: Kill at (24,18), bonus 1.10.
-Turn 128: Kill at (20,1), bonus 1.10.
-Turn 128: Dwarf reproduced at (1,3).
-Turn 128: Dwarf reproduced at (0,24).
-Turn 128: Dwarf reproduced at (24,18).
-Turn 128: Dwarf reproduced at (20,1).
-Turn 129: Kill at (1,3), bonus 1.40.
-Turn 129: Kill at (0,24), bonus 1.00.
-Turn 129: Kill at (24,18), bonus 1.10.
-Turn 129: Kill at (20,1), bonus 1.10.
-Turn 129: Dwarf reproduced at (1,3).
-Turn 129: Dwarf reproduced at (0,24).
-Turn 129: Dwarf reproduced at (24,18).
-Turn 129: Dwarf reproduced at (20,1).
-Turn 130: Kill at (1,3), bonus 1.40.
-Turn 130: Kill at (0,24), bonus 1.00.
-Turn 130: Kill at (24,18), bonus 1.10.
-Turn 130: Kill at (20,1), bonus 1.10.
-Turn 130: Dwarf reproduced at (1,3).
-Turn 130: Dwarf reproduced at (0,24).
-Turn 130: Dwarf reproduced at (24,18).
-Turn 130: Dwarf reproduced at (20,1).
-Turn 131: Kill at (1,3), bonus 1.40.
-Turn 131: Kill at (0,24), bonus 1.00.
-Turn 131: Kill at (24,18), bonus 1.10.
-Turn 131: Kill at (20,1), bonus 1.10.
-Turn 131: Dwarf reproduced at (1,3).
-Turn 131: Dwarf reproduced at (0,24).
-Turn 131: Dwarf reproduced at (24,18).
-Turn 131: Dwarf reproduced at (20,1).
-Turn 132: Kill at (1,3), bonus 1.40.
-Turn 132: Kill at (0,24), bonus 1.00.
-Turn 132: Kill at (24,18), bonus 1.10.
-Turn 132: Kill at (20,1), bonus 1.10.
-Turn 132: Dwarf reproduced at (1,3).
-Turn 132: Dwarf reproduced at (0,24).
-Turn 132: Dwarf reproduced at (24,18).
-Turn 132: Dwarf reproduced at (20,1).
-Turn 133: Kill at (1,3), bonus 1.40.
-Turn 133: Kill at (0,24), bonus 1.00.
-Turn 133: Kill at (24,18), bonus 1.10.
-Turn 133: Kill at (20,1), bonus 1.10.
-Turn 133: Dwarf reproduced at (1,3).
-Turn 133: Dwarf reproduced at (0,24).
-Turn 133: Dwarf reproduced at (24,18).
-Turn 133: Dwarf reproduced at (20,1).
-Turn 134: Kill at (1,3), bonus 1.40.
-Turn 134: Kill at (0,24), bonus 1.00.
-Turn 134: Kill at (24,18), bonus 1.10.
-Turn 134: Kill at (20,1), bonus 1.10.
-Turn 134: Dwarf reproduced at (1,3).
-Turn 134: Dwarf reproduced at (0,24).
-Turn 134: Dwarf reproduced at (24,18).
-Turn 134: Dwarf reproduced at (20,1).
-Turn 135: Kill at (1,3), bonus 1.40.
-Turn 135: Kill at (0,24), bonus 1.00.
-Turn 135: Kill at (24,18), bonus 1.10.
-Turn 135: Kill at (20,1), bonus 1.10.
-Turn 135: Dwarf reproduced at (1,3).
-Turn 135: Dwarf reproduced at (0,24).
-Turn 135: Dwarf reproduced at (24,18).
-Turn 135: Dwarf reproduced at (20,1).
-Turn 136: Kill at (1,3), bonus 1.40.
-Turn 136: Kill at (0,24), bonus 1.00.
-Turn 136: Kill at (24,18), bonus 1.10.
-Turn 136: Kill at (20,1), bonus 1.10.
-Turn 136: Dwarf reproduced at (1,3).
-Turn 136: Dwarf reproduced at (0,24).
-Turn 136: Dwarf reproduced at (24,18).
-Turn 136: Dwarf reproduced at (20,1).
-Turn 137: Kill at (1,3), bonus 1.40.
-Turn 137: Kill at (0,24), bonus 1.00.
-Turn 137: Kill at (24,18), bonus 1.10.
-Turn 137: Kill at (20,1), bonus 1.10.
-Turn 137: Dwarf reproduced at (1,3).
-Turn 137: Dwarf reproduced at (0,24).
-Turn 137: Dwarf reproduced at (24,18).
-Turn 137: Dwarf reproduced at (20,1).
-Turn 138: Kill at (1,3), bonus 1.40.
-Turn 138: Kill at (0,24), bonus 1.00.
-Turn 138: Kill at (24,18), bonus 1.10.
-Turn 138: Kill at (20,1), bonus 1.10.
-Turn 138: Dwarf reproduced at (1,3).
-Turn 138: Dwarf reproduced at (0,24).
-Turn 138: Dwarf reproduced at (24,18).
-Turn 138: Dwarf reproduced at (20,1).
-Turn 139: Kill at (1,3), bonus 1.40.
-Turn 139: Kill at (0,24), bonus 1.00.
-Turn 139: Kill at (24,18), bonus 1.10.
-Turn 139: Kill at (20,1), bonus 1.10.
-Turn 139: Dwarf reproduced at (1,3).
-Turn 139: Dwarf reproduced at (0,24).
-Turn 139: Dwarf reproduced at (24,18).
-Turn 139: Dwarf reproduced at (20,1).
-Turn 140: Kill at (1,3), bonus 1.40.
-Turn 140: Kill at (0,24), bonus 1.00.
-Turn 140: Kill at (24,18), bonus 1.10.
-Turn 140: Kill at (20,1), bonus 1.10.
-Turn 140: Dwarf reproduced at (1,3).
-Turn 140: Dwarf reproduced at (0,24).
-Turn 140: Dwarf reproduced at (24,18).
-Turn 140: Dwarf reproduced at (20,1).
-Turn 141: Kill at (1,3), bonus 1.40.
-Turn 141: Kill at (0,24), bonus 1.00.
-Turn 141: Kill at (24,18), bonus 1.10.
-Turn 141: Kill at (20,1), bonus 1.10.
-Turn 141: Dwarf reproduced at (1,3).
-Turn 141: Dwarf reproduced at (0,24).
-Turn 141: Dwarf reproduced at (24,18).
-Turn 141: Dwarf reproduced at (20,1).
-Turn 142: Kill at (1,3), bonus 1.40.
-Turn 142: Kill at (0,24), bonus 1.00.
-Turn 142: Kill at (24,18), bonus 1.10.
-Turn 142: Kill at (20,1), bonus 1.10.
-Turn 142: Dwarf reproduced at (1,3).
-Turn 142: Dwarf reproduced at (0,24).
-Turn 142: Dwarf reproduced at (24,18).
-Turn 142: Dwarf reproduced at (20,1).
-Turn 143: Kill at (1,3), bonus 1.40.
-Turn 143: Kill at (0,24), bonus 1.00.
-Turn 143: Kill at (24,18), bonus 1.10.
-Turn 143: Kill at (20,1), bonus 1.10.
-Turn 143: Dwarf reproduced at (1,3).
-Turn 143: Dwarf reproduced at (0,24).
-Turn 143: Dwarf reproduced at (24,18).
-Turn 143: Dwarf reproduced at (20,1).
-Turn 144: Kill at (1,3), bonus 1.40.
-Turn 144: Kill at (0,24), bonus 1.00.
-Turn 144: Kill at (24,18), bonus 1.10.
-Turn 144: Kill at (20,1), bonus 1.10.
-Turn 144: Dwarf reproduced at (1,3).
-Turn 144: Dwarf reproduced at (0,24).
-Turn 144: Dwarf reproduced at (24,18).
-Turn 144: Dwarf reproduced at (20,1).
-Turn 145: Kill at (1,3), bonus 1.40.
-Turn 145: Kill at (0,24), bonus 1.00.
-Turn 145: Kill at (24,18), bonus 1.10.
-Turn 145: Kill at (20,1), bonus 1.10.
-Turn 145: Dwarf reproduced at (1,3).
-Turn 145: Dwarf reproduced at (0,24).
-Turn 145: Dwarf reproduced at (24,18).
-Turn 145: Dwarf reproduced at (20,1).
-Turn 146: Kill at (1,3), bonus 1.40.
-Turn 146: Kill at (0,24), bonus 1.00.
-Turn 146: Kill at (24,18), bonus 1.10.
-Turn 146: Kill at (20,1), bonus 1.10.
-Turn 146: Dwarf reproduced at (1,3).
-Turn 146: Dwarf reproduced at (0,24).
-Turn 146: Dwarf reproduced at (24,18).
-Turn 146: Dwarf reproduced at (20,1).
-Turn 147: Kill at (1,3), bonus 1.40.
-Turn 147: Kill at (0,24), bonus 1.00.
-Turn 147: Kill at (24,18), bonus 1.10.
-Turn 147: Kill at (20,1), bonus 1.10.
-Turn 147: Dwarf reproduced at (1,3).
-Turn 147: Dwarf reproduced at (0,24).
-Turn 147: Dwarf reproduced at (24,18).
-Turn 147: Dwarf reproduced at (20,1).
-Turn 148: Kill at (1,3), bonus 1.40.
-Turn 148: Kill at (0,24), bonus 1.00.
-Turn 148: Kill at (24,18), bonus 1.10.
-Turn 148: Kill at (20,1), bonus 1.10.
-Turn 148: Dwarf reproduced at (1,3).
-Turn 148: Dwarf reproduced at (0,24).
-Turn 148: Dwarf reproduced at (24,18).
-Turn 148: Dwarf reproduced at (20,1).
-Turn 149: Kill at (1,3), bonus 1.40.
-Turn 149: Kill at (0,24), bonus 1.00.
-Turn 149: Kill at (24,18), bonus 1.10.
-Turn 149: Kill at (20,1), bonus 1.10.
-Turn 149: Dwarf reproduced at (1,3).
-Turn 149: Dwarf reproduced at (0,24).
-Turn 149: Dwarf reproduced at (24,18).
-Turn 149: Dwarf reproduced at (20,1).
+Turn 100: Orc reproduced at (20,23).
+Turn 100: Orc reproduced at (7,12).
+Turn 100: Orc reproduced at (3,5).
+Turn 100: Orc reproduced at (24,13).
+Turn 100: Orc reproduced at (3,2).
+Turn 100: Orc reproduced at (0,0).
+Turn 101: Resource at (20,16).
+Turn 101: Orc reproduced at (20,16).
+Turn 107: Resource at (5,11).
+Turn 110: Kill at (24,12), bonus 1.10.
+Turn 110: Kill at (24,12), bonus 1.10.
+Turn 110: Dwarf reproduced at (24,12).
+Turn 111: Kill at (24,12), bonus 1.10.
+Turn 111: Kill at (24,12), bonus 1.10.
+Turn 111: Dwarf reproduced at (24,12).
+Turn 111: Dwarf reproduced at (24,12).
+Turn 112: Kill at (24,12), bonus 1.10.
+Turn 112: Kill at (24,12), bonus 1.10.
+Turn 112: Dwarf reproduced at (24,12).
+Turn 112: Dwarf reproduced at (24,12).
+Turn 113: Kill at (24,12), bonus 1.10.
+Turn 113: Kill at (24,12), bonus 1.10.
+Turn 113: Dwarf reproduced at (24,12).
+Turn 113: Dwarf reproduced at (24,12).
+Turn 114: Resource at (2,11).
+Turn 114: Kill at (24,12), bonus 1.10.
+Turn 114: Kill at (24,12), bonus 1.10.
+Turn 114: Dwarf reproduced at (24,12).
+Turn 114: Dwarf reproduced at (24,12).
+Turn 114: Orc reproduced at (2,11).
+Turn 115: Kill at (24,12), bonus 1.10.
+Turn 115: Kill at (24,12), bonus 1.10.
+Turn 115: Dwarf reproduced at (24,12).
+Turn 115: Dwarf reproduced at (24,12).
+Turn 116: Kill at (24,12), bonus 1.10.
+Turn 116: Kill at (24,12), bonus 1.10.
+Turn 116: Dwarf reproduced at (24,12).
+Turn 116: Dwarf reproduced at (24,12).
+Turn 117: Kill at (24,12), bonus 1.10.
+Turn 117: Kill at (24,12), bonus 1.10.
+Turn 117: Dwarf reproduced at (24,12).
+Turn 117: Dwarf reproduced at (24,12).
+Turn 118: Kill at (24,12), bonus 1.10.
+Turn 118: Kill at (24,12), bonus 1.10.
+Turn 118: Dwarf reproduced at (24,12).
+Turn 118: Dwarf reproduced at (24,12).
+Turn 119: Kill at (24,12), bonus 1.10.
+Turn 119: Kill at (24,12), bonus 1.10.
+Turn 119: Dwarf reproduced at (24,12).
+Turn 119: Dwarf reproduced at (24,12).
+Turn 120: Kill at (24,12), bonus 1.10.
+Turn 120: Kill at (24,12), bonus 1.10.
+Turn 120: Dwarf reproduced at (24,12).
+Turn 120: Dwarf reproduced at (24,12).
+Turn 121: Kill at (24,12), bonus 1.10.
+Turn 121: Kill at (9,11), bonus 1.20.
+Turn 121: Kill at (22,4), bonus 1.00.
+Turn 121: Kill at (24,12), bonus 1.10.
+Turn 121: Dwarf reproduced at (24,12).
+Turn 121: Dwarf reproduced at (9,11).
+Turn 121: Dwarf reproduced at (24,12).
+Turn 122: Kill at (24,12), bonus 1.10.
+Turn 122: Kill at (9,11), bonus 1.20.
+Turn 122: Kill at (24,12), bonus 1.10.
+Turn 122: Dwarf reproduced at (24,12).
+Turn 122: Dwarf reproduced at (9,11).
+Turn 122: Dwarf reproduced at (24,12).
+Turn 123: Kill at (24,12), bonus 1.10.
+Turn 123: Kill at (9,11), bonus 1.20.
+Turn 123: Kill at (24,12), bonus 1.10.
+Turn 123: Dwarf reproduced at (24,12).
+Turn 123: Dwarf reproduced at (9,11).
+Turn 123: Dwarf reproduced at (24,12).
+Turn 124: Kill at (24,12), bonus 1.10.
+Turn 124: Kill at (9,11), bonus 1.20.
+Turn 124: Kill at (24,12), bonus 1.10.
+Turn 124: Dwarf reproduced at (24,12).
+Turn 124: Dwarf reproduced at (9,11).
+Turn 124: Dwarf reproduced at (24,12).
+Turn 125: Kill at (24,12), bonus 1.10.
+Turn 125: Kill at (9,11), bonus 1.20.
+Turn 125: Kill at (24,12), bonus 1.10.
+Turn 125: Dwarf reproduced at (24,12).
+Turn 125: Dwarf reproduced at (9,11).
+Turn 125: Dwarf reproduced at (24,12).
+Turn 126: Kill at (24,12), bonus 1.10.
+Turn 126: Kill at (9,11), bonus 1.20.
+Turn 126: Kill at (24,12), bonus 1.10.
+Turn 126: Dwarf reproduced at (24,12).
+Turn 126: Dwarf reproduced at (9,11).
+Turn 126: Dwarf reproduced at (24,12).
+Turn 127: Kill at (24,12), bonus 1.10.
+Turn 127: Kill at (9,11), bonus 1.20.
+Turn 127: Kill at (24,12), bonus 1.10.
+Turn 127: Dwarf reproduced at (24,12).
+Turn 127: Dwarf reproduced at (9,11).
+Turn 127: Dwarf reproduced at (24,12).
+Turn 128: Kill at (24,12), bonus 1.10.
+Turn 128: Kill at (9,11), bonus 1.20.
+Turn 128: Kill at (24,12), bonus 1.10.
+Turn 128: Dwarf reproduced at (24,12).
+Turn 128: Dwarf reproduced at (9,11).
+Turn 128: Dwarf reproduced at (24,12).
+Turn 129: Kill at (24,12), bonus 1.10.
+Turn 129: Kill at (9,11), bonus 1.20.
+Turn 129: Kill at (24,12), bonus 1.10.
+Turn 129: Dwarf reproduced at (24,12).
+Turn 129: Dwarf reproduced at (9,11).
+Turn 129: Dwarf reproduced at (24,12).
+Turn 130: Kill at (24,12), bonus 1.10.
+Turn 130: Kill at (9,11), bonus 1.20.
+Turn 130: Kill at (24,12), bonus 1.10.
+Turn 130: Dwarf reproduced at (24,12).
+Turn 130: Dwarf reproduced at (9,11).
+Turn 130: Dwarf reproduced at (24,12).
+Turn 131: Kill at (24,12), bonus 1.10.
+Turn 131: Kill at (9,11), bonus 1.20.
+Turn 131: Kill at (24,12), bonus 1.10.
+Turn 131: Dwarf reproduced at (24,12).
+Turn 131: Dwarf reproduced at (9,11).
+Turn 131: Dwarf reproduced at (24,12).
+Turn 132: Kill at (24,12), bonus 1.10.
+Turn 132: Kill at (9,11), bonus 1.20.
+Turn 132: Kill at (24,12), bonus 1.10.
+Turn 132: Dwarf reproduced at (24,12).
+Turn 132: Dwarf reproduced at (9,11).
+Turn 132: Dwarf reproduced at (24,12).
+Turn 133: Kill at (24,12), bonus 1.10.
+Turn 133: Kill at (9,11), bonus 1.20.
+Turn 133: Kill at (24,12), bonus 1.10.
+Turn 133: Dwarf reproduced at (24,12).
+Turn 133: Dwarf reproduced at (9,11).
+Turn 133: Dwarf reproduced at (24,12).
+Turn 134: Kill at (24,12), bonus 1.10.
+Turn 134: Kill at (9,11), bonus 1.20.
+Turn 134: Kill at (24,12), bonus 1.10.
+Turn 134: Dwarf reproduced at (24,12).
+Turn 134: Dwarf reproduced at (9,11).
+Turn 134: Dwarf reproduced at (24,12).
+Turn 135: Kill at (24,12), bonus 1.10.
+Turn 135: Kill at (9,11), bonus 1.20.
+Turn 135: Kill at (24,12), bonus 1.10.
+Turn 135: Dwarf reproduced at (24,12).
+Turn 135: Dwarf reproduced at (9,11).
+Turn 135: Dwarf reproduced at (24,12).
+Turn 136: Kill at (24,12), bonus 1.20.
+Turn 136: Kill at (9,11), bonus 1.20.
+Turn 136: Kill at (24,12), bonus 1.20.
+Turn 136: Dwarf reproduced at (24,12).
+Turn 136: Dwarf reproduced at (9,11).
+Turn 136: Dwarf reproduced at (24,12).
+Turn 137: Kill at (24,12), bonus 1.20.
+Turn 137: Kill at (9,11), bonus 1.20.
+Turn 137: Kill at (24,12), bonus 1.20.
+Turn 137: Dwarf reproduced at (24,12).
+Turn 137: Dwarf reproduced at (9,11).
+Turn 137: Dwarf reproduced at (24,12).
+Turn 138: Kill at (24,12), bonus 1.20.
+Turn 138: Kill at (9,11), bonus 1.20.
+Turn 138: Kill at (24,12), bonus 1.20.
+Turn 138: Dwarf reproduced at (24,12).
+Turn 138: Dwarf reproduced at (9,11).
+Turn 138: Dwarf reproduced at (24,12).
+Turn 139: Kill at (24,12), bonus 1.20.
+Turn 139: Kill at (9,11), bonus 1.20.
+Turn 139: Kill at (24,12), bonus 1.20.
+Turn 139: Dwarf reproduced at (24,12).
+Turn 139: Dwarf reproduced at (9,11).
+Turn 139: Dwarf reproduced at (24,12).
+Turn 140: Kill at (24,12), bonus 1.20.
+Turn 140: Kill at (9,11), bonus 1.20.
+Turn 140: Kill at (24,12), bonus 1.20.
+Turn 140: Dwarf reproduced at (24,12).
+Turn 140: Dwarf reproduced at (9,11).
+Turn 140: Dwarf reproduced at (24,12).
+Turn 141: Kill at (24,12), bonus 1.20.
+Turn 141: Kill at (9,11), bonus 1.20.
+Turn 141: Kill at (24,12), bonus 1.20.
+Turn 141: Dwarf reproduced at (24,12).
+Turn 141: Dwarf reproduced at (9,11).
+Turn 141: Dwarf reproduced at (24,12).
+Turn 142: Kill at (24,12), bonus 1.20.
+Turn 142: Kill at (9,11), bonus 1.20.
+Turn 142: Kill at (24,12), bonus 1.20.
+Turn 142: Dwarf reproduced at (24,12).
+Turn 142: Dwarf reproduced at (9,11).
+Turn 142: Dwarf reproduced at (24,12).
+Turn 143: Kill at (24,12), bonus 1.20.
+Turn 143: Kill at (9,11), bonus 1.20.
+Turn 143: Kill at (24,12), bonus 1.20.
+Turn 143: Dwarf reproduced at (24,12).
+Turn 143: Dwarf reproduced at (9,11).
+Turn 143: Dwarf reproduced at (24,12).
+Turn 144: Agent died at (9,11).
+Turn 144: Agent died at (24,12).
+Turn 144: Kill at (24,12), bonus 1.10.
+Turn 144: Kill at (9,11), bonus 1.10.
+Turn 144: Kill at (24,12), bonus 1.10.
+Turn 144: Dwarf reproduced at (24,12).
+Turn 144: Dwarf reproduced at (9,11).
+Turn 144: Dwarf reproduced at (24,12).
+Turn 145: Kill at (24,12), bonus 1.10.
+Turn 145: Kill at (9,11), bonus 1.10.
+Turn 145: Kill at (24,12), bonus 1.10.
+Turn 145: Dwarf reproduced at (24,12).
+Turn 145: Dwarf reproduced at (9,11).
+Turn 145: Dwarf reproduced at (24,12).
+Turn 146: Kill at (24,12), bonus 1.10.
+Turn 146: Kill at (9,11), bonus 1.10.
+Turn 146: Kill at (24,12), bonus 1.10.
+Turn 146: Dwarf reproduced at (24,12).
+Turn 146: Dwarf reproduced at (9,11).
+Turn 146: Dwarf reproduced at (24,12).
+Turn 147: Kill at (24,12), bonus 1.10.
+Turn 147: Kill at (9,11), bonus 1.10.
+Turn 147: Kill at (24,12), bonus 1.10.
+Turn 147: Dwarf reproduced at (24,12).
+Turn 147: Dwarf reproduced at (9,11).
+Turn 147: Dwarf reproduced at (24,12).
+Turn 148: Kill at (24,12), bonus 1.10.
+Turn 148: Kill at (9,11), bonus 1.10.
+Turn 148: Kill at (24,12), bonus 1.10.
+Turn 148: Dwarf reproduced at (24,12).
+Turn 148: Dwarf reproduced at (9,11).
+Turn 148: Dwarf reproduced at (24,12).
+Turn 149: Kill at (24,12), bonus 1.10.
+Turn 149: Kill at (9,11), bonus 1.10.
+Turn 149: Kill at (24,12), bonus 1.10.
+Turn 149: Dwarf reproduced at (24,12).
+Turn 149: Dwarf reproduced at (9,11).
+Turn 149: Dwarf reproduced at (24,12).
 Turn 150: Reinforcement.
-Turn 150: Dwarf reproduced at (0,3).
-Turn 150: Dwarf reproduced at (1,24).
-Turn 150: Dwarf reproduced at (0,19).
-Turn 150: Dwarf reproduced at (19,2).
-Turn 151: Dwarf reproduced at (1,4).
-Turn 155: Kill at (4,16), bonus 1.10.
-Turn 155: Orc reproduced at (4,16).
-Turn 156: Kill at (4,16), bonus 1.10.
-Turn 156: Kill at (24,18), bonus 1.10.
-Turn 156: Orc reproduced at (4,16).
-Turn 157: Kill at (4,16), bonus 1.10.
-Turn 161: Kill at (0,23), bonus 1.00.
-Turn 161: Orc reproduced at (0,23).
-Turn 162: Kill at (0,17), bonus 1.10.
-Turn 162: Kill at (0,23), bonus 1.00.
-Turn 162: Orc reproduced at (0,17).
-Turn 163: Kill at (0,17), bonus 1.10.
-Turn 163: Kill at (0,24), bonus 1.00.
-Turn 163: Orc reproduced at (0,17).
-Turn 163: Orc reproduced at (0,24).
-Turn 164: Kill at (0,17), bonus 1.10.
-Turn 164: Kill at (0,24), bonus 1.00.
-Turn 164: Orc reproduced at (0,17).
-Turn 164: Orc reproduced at (0,24).
-Turn 165: Kill at (0,17), bonus 1.10.
-Turn 165: Kill at (0,24), bonus 1.00.
-Turn 166: Kill at (0,24), bonus 1.00.
-Turn 166: Orc reproduced at (0,24).
-Turn 167: Kill at (18,24), bonus 1.00.
-Turn 167: Kill at (0,24), bonus 1.00.
-Turn 168: Kill at (0,24), bonus 1.00.
-Turn 168: Kill at (21,24), bonus 1.10.
-Turn 168: Orc reproduced at (0,24).
-Turn 169: Kill at (0,24), bonus 1.00.
-Turn 169: Kill at (20,24), bonus 1.10.
-Turn 169: Orc reproduced at (0,24).
-Turn 169: Orc reproduced at (20,24).
-Turn 170: Kill at (0,24), bonus 1.00.
-Turn 170: Kill at (20,24), bonus 1.10.
-Turn 170: Orc reproduced at (20,24).
-Turn 171: Kill at (20,24), bonus 1.00.
-Turn 172: Kill at (17,24), bonus 1.10.
-Turn 172: Orc reproduced at (17,24).
-Turn 173: Kill at (17,24), bonus 1.10.
-Turn 173: Orc reproduced at (17,24).
-Turn 174: Kill at (17,24), bonus 1.10.
-Turn 174: Kill at (0,24), bonus 1.00.
-Turn 174: Orc reproduced at (0,24).
-Turn 175: Kill at (0,24), bonus 1.00.
-Turn 182: Kill at (13,23), bonus 1.00.
-Turn 182: Orc reproduced at (13,23).
-Turn 183: Kill at (24,4), bonus 1.00.
-Turn 183: Kill at (13,23), bonus 1.00.
-Turn 183: Kill at (24,24), bonus 1.10.
-Turn 183: Orc reproduced at (24,4).
-Turn 183: Orc reproduced at (24,24).
-Turn 184: Kill at (24,4), bonus 1.00.
-Turn 184: Kill at (24,24), bonus 1.10.
-Turn 184: Orc reproduced at (24,24).
-Turn 185: Kill at (24,24), bonus 1.00.
-Turn 186: Kill at (24,24), bonus 1.00.
-Turn 186: Orc reproduced at (24,24).
-Turn 187: Kill at (16,24), bonus 1.10.
-Turn 187: Kill at (24,24), bonus 1.00.
-Turn 187: Orc reproduced at (16,24).
-Turn 188: Kill at (19,24), bonus 1.10.
-Turn 188: Kill at (16,24), bonus 1.10.
-Turn 188: Kill at (24,24), bonus 1.00.
-Turn 188: Orc reproduced at (19,24).
-Turn 188: Orc reproduced at (16,24).
-Turn 188: Orc reproduced at (24,24).
-Turn 189: Kill at (19,24), bonus 1.10.
-Turn 189: Kill at (16,24), bonus 1.10.
-Turn 189: Kill at (24,24), bonus 1.00.
-Turn 189: Orc reproduced at (19,24).
-Turn 189: Orc reproduced at (24,24).
-Turn 190: Kill at (19,24), bonus 1.10.
-Turn 190: Kill at (24,24), bonus 1.00.
-Turn 191: Kill at (18,24), bonus 1.10.
-Turn 191: Kill at (18,24), bonus 1.10.
-Turn 191: Orc reproduced at (18,24).
-Turn 191: Orc reproduced at (18,24).
-Turn 192: Kill at (18,24), bonus 1.10.
-Turn 192: Kill at (18,24), bonus 1.10.
-Turn 192: Orc reproduced at (18,24).
-Turn 192: Orc reproduced at (18,24).
-Turn 193: Kill at (18,24), bonus 1.10.
-Turn 193: Kill at (18,24), bonus 1.10.
-Turn 196: Agent died at (24,2).
-Turn 196: Agent died at (22,0).
-Turn 199: Kill at (10,4), bonus 1.10.
-Turn 199: Orc reproduced at (10,4).
+Turn 150: Kill at (5,2), bonus 1.10.
+Turn 150: Dwarf reproduced at (23,13).
+Turn 150: Dwarf reproduced at (8,10).
+Turn 150: Dwarf reproduced at (24,12).
+Turn 153: Kill at (0,12), bonus 1.00.
+Turn 153: Orc reproduced at (0,12).
+Turn 154: Kill at (0,12), bonus 1.00.
+Turn 154: Kill at (5,0), bonus 1.00.
+Turn 154: Kill at (11,14), bonus 1.10.
+Turn 155: Kill at (4,6), bonus 1.20.
+Turn 156: Kill at (15,3), bonus 1.00.
+Turn 156: Kill at (0,13), bonus 1.00.
+Turn 156: Orc reproduced at (0,13).
+Turn 157: Kill at (0,13), bonus 1.00.
+Turn 160: Kill at (0,10), bonus 1.00.
+Turn 160: Kill at (0,14), bonus 1.10.
+Turn 160: Orc reproduced at (0,14).
+Turn 161: Kill at (0,14), bonus 1.10.
+Turn 161: Orc reproduced at (0,14).
+Turn 162: Kill at (0,14), bonus 1.20.
+Turn 163: Kill at (0,14), bonus 1.20.
+Turn 163: Orc reproduced at (0,14).
+Turn 164: Kill at (0,14), bonus 1.20.
+Turn 164: Kill at (16,11), bonus 1.10.
+Turn 164: Orc reproduced at (0,14).
+Turn 164: Orc reproduced at (16,11).
+Turn 165: Resource at (9,0).
+Turn 165: Kill at (0,14), bonus 1.20.
+Turn 165: Kill at (16,11), bonus 1.10.
+Turn 165: Orc reproduced at (9,0).
+Turn 165: Orc reproduced at (16,11).
+Turn 166: Kill at (9,0), bonus 1.00.
+Turn 166: Kill at (16,11), bonus 1.10.
+Turn 168: Kill at (14,24), bonus 1.00.
+Turn 171: Kill at (14,5), bonus 1.20.
+Turn 171: Kill at (11,2), bonus 1.00.
+Turn 171: Orc reproduced at (11,2).
+Turn 172: Kill at (11,2), bonus 1.10.
+Turn 172: Kill at (21,16), bonus 1.10.
+Turn 172: Orc reproduced at (11,2).
+Turn 173: Kill at (11,2), bonus 1.30.
+Turn 175: Kill at (8,4), bonus 1.30.
+Turn 175: Kill at (10,5), bonus 1.60.
+Turn 175: Orc reproduced at (8,4).
+Turn 175: Orc reproduced at (10,5).
+Turn 176: Kill at (8,4), bonus 1.40.
+Turn 176: Kill at (10,5), bonus 1.60.
+Turn 176: Orc reproduced at (8,4).
+Turn 176: Orc reproduced at (10,5).
+Turn 177: Kill at (10,5), bonus 1.60.
+Turn 177: Kill at (8,4), bonus 1.50.
+Turn 177: Orc reproduced at (10,5).
+Turn 177: Orc reproduced at (8,4).
+Turn 178: Kill at (10,5), bonus 1.60.
+Turn 178: Kill at (8,4), bonus 1.50.
+Turn 178: Orc reproduced at (10,5).
+Turn 178: Orc reproduced at (8,4).
+Turn 179: Kill at (10,5), bonus 1.60.
+Turn 179: Kill at (8,4), bonus 1.50.
+Turn 179: Orc reproduced at (10,5).
+Turn 179: Orc reproduced at (8,4).
+Turn 180: Kill at (10,5), bonus 1.60.
+Turn 180: Kill at (8,4), bonus 1.60.
+Turn 180: Orc reproduced at (10,5).
+Turn 180: Orc reproduced at (8,4).
+Turn 181: Kill at (10,5), bonus 1.60.
+Turn 181: Kill at (8,4), bonus 1.60.
+Turn 181: Orc reproduced at (10,5).
+Turn 181: Orc reproduced at (8,4).
+Turn 182: Kill at (10,5), bonus 1.60.
+Turn 182: Kill at (8,4), bonus 1.60.
+Turn 182: Orc reproduced at (10,5).
+Turn 182: Orc reproduced at (8,4).
+Turn 183: Kill at (10,5), bonus 1.60.
+Turn 183: Kill at (8,4), bonus 1.60.
+Turn 183: Orc reproduced at (10,5).
+Turn 183: Orc reproduced at (8,4).
+Turn 184: Kill at (10,5), bonus 1.60.
+Turn 184: Kill at (8,4), bonus 1.60.
+Turn 184: Orc reproduced at (10,5).
+Turn 184: Orc reproduced at (8,4).
+Turn 185: Kill at (10,5), bonus 1.60.
+Turn 185: Kill at (8,4), bonus 1.60.
+Turn 185: Orc reproduced at (10,5).
+Turn 185: Orc reproduced at (8,4).
+Turn 186: Kill at (10,5), bonus 1.60.
+Turn 186: Kill at (8,4), bonus 1.60.
+Turn 186: Orc reproduced at (10,5).
+Turn 186: Orc reproduced at (8,4).
+Turn 187: Kill at (10,5), bonus 1.60.
+Turn 187: Kill at (8,4), bonus 1.60.
+Turn 187: Orc reproduced at (10,5).
+Turn 187: Orc reproduced at (8,4).
+Turn 188: Kill at (10,5), bonus 1.60.
+Turn 188: Kill at (8,4), bonus 1.60.
+Turn 188: Orc reproduced at (10,5).
+Turn 188: Orc reproduced at (8,4).
+Turn 189: Kill at (10,5), bonus 1.60.
+Turn 189: Kill at (8,4), bonus 1.60.
+Turn 189: Orc reproduced at (10,5).
+Turn 189: Orc reproduced at (8,4).
+Turn 190: Kill at (10,5), bonus 1.60.
+Turn 190: Kill at (8,4), bonus 1.60.
+Turn 190: Orc reproduced at (10,5).
+Turn 190: Orc reproduced at (8,4).
+Turn 191: Kill at (10,5), bonus 1.60.
+Turn 191: Kill at (8,4), bonus 1.60.
+Turn 191: Orc reproduced at (10,5).
+Turn 191: Orc reproduced at (8,4).
+Turn 192: Kill at (10,5), bonus 1.60.
+Turn 192: Kill at (8,4), bonus 1.60.
+Turn 192: Orc reproduced at (10,5).
+Turn 192: Orc reproduced at (8,4).
+Turn 193: Kill at (10,5), bonus 1.60.
+Turn 193: Kill at (8,4), bonus 1.60.
+Turn 193: Orc reproduced at (10,5).
+Turn 193: Orc reproduced at (8,4).
+Turn 194: Kill at (10,5), bonus 1.60.
+Turn 194: Kill at (8,4), bonus 1.60.
+Turn 194: Orc reproduced at (10,5).
+Turn 194: Orc reproduced at (8,4).
+Turn 195: Kill at (10,5), bonus 1.60.
+Turn 195: Kill at (8,4), bonus 1.60.
+Turn 195: Orc reproduced at (10,5).
+Turn 195: Orc reproduced at (8,4).
+Turn 196: Kill at (10,5), bonus 1.60.
+Turn 196: Kill at (8,4), bonus 1.60.
+Turn 196: Orc reproduced at (10,5).
+Turn 196: Orc reproduced at (8,4).
+Turn 197: Kill at (10,5), bonus 1.60.
+Turn 197: Kill at (8,4), bonus 1.60.
+Turn 197: Orc reproduced at (10,5).
+Turn 197: Orc reproduced at (8,4).
+Turn 198: Kill at (10,5), bonus 1.60.
+Turn 198: Kill at (8,4), bonus 1.60.
+Turn 198: Orc reproduced at (10,5).
+Turn 198: Orc reproduced at (8,4).
+Turn 199: Kill at (10,5), bonus 1.60.
+Turn 199: Kill at (8,4), bonus 1.60.
+Turn 199: Orc reproduced at (10,5).
+Turn 199: Orc reproduced at (8,4).
 Turn 200: Reinforcement.
-Turn 200: Kill at (24,10), bonus 1.00.
-Turn 200: Orc reproduced at (18,1).
-Turn 200: Orc reproduced at (21,23).
-Turn 200: Orc reproduced at (20,0).
-Turn 200: Orc reproduced at (24,16).
-Turn 203: Kill at (8,3), bonus 1.10.
-Turn 203: Dwarf reproduced at (8,3).
+Turn 200: Orc reproduced at (10,5).
+Turn 203: Resource at (6,8).
+Turn 203: Orc reproduced at (6,8).
+Turn 219: Resource at (13,12).
+Turn 221: Kill at (16,24), bonus 1.00.
+Turn 237: Kill at (0,0), bonus 1.00.
+Turn 237: Dwarf reproduced at (0,0).
+Turn 238: Resource at (1,18).
+Turn 238: Kill at (0,0), bonus 1.00.
+Turn 238: Dwarf reproduced at (0,0).
+Turn 238: Dwarf reproduced at (1,18).
+Turn 239: Kill at (0,0), bonus 1.00.
+Turn 239: Dwarf reproduced at (0,0).
+Turn 240: Kill at (0,0), bonus 1.00.
+Turn 240: Dwarf reproduced at (0,0).
+Turn 241: Kill at (0,0), bonus 1.00.
+Turn 241: Dwarf reproduced at (0,0).
+Turn 242: Kill at (0,0), bonus 1.00.
+Turn 242: Dwarf reproduced at (0,0).
+Turn 243: Kill at (0,0), bonus 1.00.
+Turn 243: Dwarf reproduced at (0,0).
+Turn 244: Kill at (0,0), bonus 1.00.
+Turn 244: Dwarf reproduced at (0,0).
+Turn 245: Agent died at (9,9).
+Turn 245: Kill at (0,0), bonus 1.00.
+Turn 245: Dwarf reproduced at (0,0).
+Turn 246: Kill at (0,0), bonus 1.00.
+Turn 246: Dwarf reproduced at (0,0).
+Turn 247: Kill at (0,0), bonus 1.00.
+Turn 247: Dwarf reproduced at (0,0).
+Turn 248: Kill at (0,0), bonus 1.00.
+Turn 248: Dwarf reproduced at (0,0).
+Turn 249: Kill at (0,0), bonus 1.00.
+Turn 249: Dwarf reproduced at (0,0).
+Turn 250: Reinforcement.
+Turn 250: Kill at (5,16), bonus 1.00.
+Turn 250: Kill at (12,9), bonus 1.40.
+Turn 250: Orc reproduced at (12,9).
+Turn 250: Dwarf reproduced at (1,24).
+Turn 251: Kill at (6,15), bonus 1.20.
+Turn 251: Kill at (12,9), bonus 1.40.
+Turn 251: Orc reproduced at (6,15).
+Turn 251: Orc reproduced at (12,9).
+Turn 252: Kill at (6,15), bonus 1.20.
+Turn 252: Kill at (12,9), bonus 1.40.
+Turn 252: Kill at (16,14), bonus 1.10.
+Turn 252: Orc reproduced at (6,15).
+Turn 252: Orc reproduced at (12,9).
+Turn 252: Orc reproduced at (16,14).
+Turn 253: Kill at (6,15), bonus 1.20.
+Turn 253: Kill at (12,9), bonus 1.40.
+Turn 253: Kill at (16,14), bonus 1.10.
+Turn 253: Orc reproduced at (12,9).
+Turn 253: Orc reproduced at (16,14).
+Turn 254: Kill at (6,14), bonus 1.40.
+Turn 254: Kill at (12,9), bonus 1.40.
+Turn 254: Kill at (16,14), bonus 1.10.
+Turn 254: Orc reproduced at (6,14).
+Turn 254: Orc reproduced at (12,9).
+Turn 254: Orc reproduced at (16,14).
+Turn 255: Kill at (6,14), bonus 1.40.
+Turn 255: Kill at (12,9), bonus 1.40.
+Turn 255: Kill at (16,14), bonus 1.10.
+Turn 255: Orc reproduced at (6,14).
+Turn 255: Orc reproduced at (12,9).
+Turn 256: Kill at (6,14), bonus 1.40.
+Turn 256: Kill at (12,9), bonus 1.40.
+Turn 256: Orc reproduced at (6,14).
+Turn 256: Orc reproduced at (12,9).
+Turn 257: Kill at (6,14), bonus 1.40.
+Turn 257: Kill at (12,9), bonus 1.40.
+Turn 257: Orc reproduced at (6,14).
+Turn 257: Orc reproduced at (12,9).
+Turn 258: Kill at (6,14), bonus 1.40.
+Turn 258: Kill at (12,9), bonus 1.40.
+Turn 258: Orc reproduced at (6,14).
+Turn 258: Orc reproduced at (12,9).
+Turn 259: Kill at (6,14), bonus 1.40.
+Turn 259: Kill at (12,9), bonus 1.40.
+Turn 259: Orc reproduced at (6,14).
+Turn 259: Orc reproduced at (12,9).
+Turn 260: Kill at (6,14), bonus 1.40.
+Turn 260: Kill at (12,9), bonus 1.40.
+Turn 260: Orc reproduced at (6,14).
+Turn 260: Orc reproduced at (12,9).
+Turn 261: Kill at (6,14), bonus 1.40.
+Turn 261: Kill at (12,9), bonus 1.40.
+Turn 261: Orc reproduced at (6,14).
+Turn 261: Orc reproduced at (12,9).
+Turn 262: Kill at (6,14), bonus 1.40.
+Turn 262: Kill at (12,9), bonus 1.40.
+Turn 262: Orc reproduced at (6,14).
+Turn 262: Orc reproduced at (12,9).
+Turn 263: Kill at (6,14), bonus 1.40.
+Turn 263: Kill at (12,9), bonus 1.40.
+Turn 263: Orc reproduced at (6,14).
+Turn 263: Orc reproduced at (12,9).
+Turn 264: Kill at (6,14), bonus 1.40.
+Turn 264: Kill at (12,9), bonus 1.40.
+Turn 264: Orc reproduced at (6,14).
+Turn 264: Orc reproduced at (12,9).
+Turn 265: Kill at (6,14), bonus 1.40.
+Turn 265: Kill at (12,9), bonus 1.50.
+Turn 265: Orc reproduced at (6,14).
+Turn 265: Orc reproduced at (12,9).
+Turn 266: Resource at (14,20).
+Turn 266: Kill at (6,14), bonus 1.40.
+Turn 266: Kill at (12,9), bonus 1.50.
+Turn 266: Orc reproduced at (6,14).
+Turn 266: Orc reproduced at (12,9).
+Turn 266: Orc reproduced at (14,20).
+Turn 267: Kill at (6,14), bonus 1.40.
+Turn 267: Kill at (12,9), bonus 1.40.
+Turn 267: Kill at (1,24), bonus 1.00.
+Turn 267: Kill at (14,20), bonus 1.00.
+Turn 267: Orc reproduced at (6,14).
+Turn 267: Orc reproduced at (12,9).
+Turn 267: Orc reproduced at (14,20).
+Turn 268: Kill at (6,14), bonus 1.40.
+Turn 268: Kill at (12,9), bonus 1.40.
+Turn 268: Kill at (14,20), bonus 1.00.
+Turn 268: Orc reproduced at (6,14).
+Turn 268: Orc reproduced at (12,9).
+Turn 269: Kill at (6,14), bonus 1.40.
+Turn 269: Kill at (12,9), bonus 1.40.
+Turn 269: Kill at (23,0), bonus 1.00.
+Turn 269: Orc reproduced at (6,14).
+Turn 269: Orc reproduced at (12,9).
+Turn 269: Orc reproduced at (23,0).
+Turn 270: Kill at (6,14), bonus 1.50.
+Turn 270: Kill at (12,9), bonus 1.40.
+Turn 270: Kill at (23,0), bonus 1.00.
+Turn 270: Kill at (9,14), bonus 1.20.
+Turn 270: Orc reproduced at (6,14).
+Turn 270: Orc reproduced at (12,9).
+Turn 270: Orc reproduced at (9,14).
+Turn 271: Kill at (6,14), bonus 1.60.
+Turn 271: Kill at (12,9), bonus 1.40.
+Turn 271: Kill at (9,14), bonus 1.20.
+Turn 271: Orc reproduced at (6,14).
+Turn 271: Orc reproduced at (12,9).
+Turn 271: Orc reproduced at (9,14).
+Turn 272: Kill at (6,14), bonus 1.60.
+Turn 272: Kill at (12,9), bonus 1.40.
+Turn 272: Kill at (9,14), bonus 1.20.
+Turn 272: Kill at (24,0), bonus 1.00.
+Turn 272: Orc reproduced at (6,14).
+Turn 272: Orc reproduced at (12,9).
+Turn 272: Orc reproduced at (9,14).
+Turn 272: Orc reproduced at (24,0).
+Turn 273: Kill at (6,14), bonus 1.60.
+Turn 273: Kill at (12,9), bonus 1.40.
+Turn 273: Kill at (9,14), bonus 1.20.
+Turn 273: Kill at (24,0), bonus 1.00.
+Turn 273: Kill at (6,22), bonus 1.10.
+Turn 273: Orc reproduced at (6,14).
+Turn 273: Orc reproduced at (12,9).
+Turn 273: Orc reproduced at (24,0).
+Turn 274: Kill at (6,14), bonus 1.60.
+Turn 274: Kill at (12,9), bonus 1.40.
+Turn 274: Kill at (24,0), bonus 1.00.
+Turn 274: Orc reproduced at (6,14).
+Turn 274: Orc reproduced at (12,9).
+Turn 275: Kill at (6,14), bonus 1.60.
+Turn 275: Kill at (12,9), bonus 1.40.
+Turn 275: Orc reproduced at (6,14).
+Turn 275: Orc reproduced at (12,9).
+Turn 276: Kill at (6,14), bonus 1.60.
+Turn 276: Kill at (12,9), bonus 1.40.
+Turn 276: Orc reproduced at (6,14).
+Turn 276: Orc reproduced at (12,9).
+Turn 277: Kill at (6,14), bonus 1.60.
+Turn 277: Kill at (12,9), bonus 1.40.
+Turn 277: Orc reproduced at (6,14).
+Turn 277: Orc reproduced at (12,9).
+Turn 278: Kill at (6,14), bonus 1.60.
+Turn 278: Kill at (12,9), bonus 1.40.
+Turn 278: Orc reproduced at (6,14).
+Turn 278: Orc reproduced at (12,9).
+Turn 279: Kill at (6,14), bonus 1.60.
+Turn 279: Kill at (12,9), bonus 1.40.
+Turn 279: Orc reproduced at (6,14).
+Turn 279: Orc reproduced at (12,9).
+Turn 280: Kill at (6,14), bonus 1.60.
+Turn 280: Kill at (12,9), bonus 1.40.
+Turn 280: Orc reproduced at (6,14).
+Turn 280: Orc reproduced at (12,9).
+Turn 281: Kill at (6,14), bonus 1.60.
+Turn 281: Kill at (12,9), bonus 1.40.
+Turn 281: Orc reproduced at (6,14).
+Turn 281: Orc reproduced at (12,9).
+Turn 282: Kill at (6,14), bonus 1.60.
+Turn 282: Kill at (12,9), bonus 1.40.
+Turn 282: Kill at (6,1), bonus 1.20.
+Turn 282: Orc reproduced at (6,14).
+Turn 282: Orc reproduced at (12,9).
+Turn 282: Orc reproduced at (6,1).
+Turn 283: Kill at (6,14), bonus 1.60.
+Turn 283: Kill at (12,9), bonus 1.40.
+Turn 283: Kill at (6,1), bonus 1.20.
+Turn 283: Orc reproduced at (6,14).
+Turn 283: Orc reproduced at (12,9).
+Turn 284: Kill at (6,14), bonus 1.60.
+Turn 284: Kill at (12,9), bonus 1.40.
+Turn 284: Orc reproduced at (6,14).
+Turn 284: Orc reproduced at (12,9).
+Turn 285: Kill at (6,14), bonus 1.60.
+Turn 285: Kill at (12,9), bonus 1.40.
+Turn 285: Orc reproduced at (6,14).
+Turn 285: Orc reproduced at (12,9).
+Turn 286: Kill at (6,14), bonus 1.60.
+Turn 286: Kill at (12,9), bonus 1.40.
+Turn 286: Orc reproduced at (6,14).
+Turn 286: Orc reproduced at (12,9).
+Turn 287: Kill at (6,14), bonus 1.60.
+Turn 287: Kill at (12,9), bonus 1.40.
+Turn 287: Orc reproduced at (6,14).
+Turn 287: Orc reproduced at (12,9).
+Turn 288: Kill at (6,14), bonus 1.60.
+Turn 288: Kill at (12,9), bonus 1.40.
+Turn 288: Orc reproduced at (6,14).
+Turn 288: Orc reproduced at (12,9).
+Turn 289: Kill at (6,14), bonus 1.60.
+Turn 289: Kill at (12,9), bonus 1.40.
+Turn 289: Kill at (24,15), bonus 1.00.
+Turn 289: Orc reproduced at (6,14).
+Turn 289: Orc reproduced at (12,9).
+Turn 290: Kill at (6,14), bonus 1.60.
+Turn 290: Kill at (12,9), bonus 1.40.
+Turn 290: Orc reproduced at (6,14).
+Turn 290: Orc reproduced at (12,9).
+Turn 291: Kill at (6,14), bonus 1.60.
+Turn 291: Kill at (12,9), bonus 1.40.
+Turn 291: Orc reproduced at (6,14).
+Turn 291: Orc reproduced at (12,9).
+Turn 292: Kill at (6,14), bonus 1.60.
+Turn 292: Kill at (12,9), bonus 1.40.
+Turn 292: Orc reproduced at (6,14).
+Turn 292: Orc reproduced at (12,9).
+Turn 293: Kill at (6,14), bonus 1.60.
+Turn 293: Kill at (12,9), bonus 1.40.
+Turn 293: Orc reproduced at (6,14).
+Turn 293: Orc reproduced at (12,9).
+Turn 294: Kill at (6,14), bonus 1.60.
+Turn 294: Kill at (12,9), bonus 1.40.
+Turn 294: Orc reproduced at (6,14).
+Turn 294: Orc reproduced at (12,9).
+Turn 295: Kill at (6,14), bonus 1.60.
+Turn 295: Kill at (12,9), bonus 1.40.
+Turn 295: Orc reproduced at (6,14).
+Turn 295: Orc reproduced at (12,9).
+Turn 296: Kill at (6,14), bonus 1.60.
+Turn 296: Kill at (12,9), bonus 1.40.
+Turn 296: Orc reproduced at (6,14).
+Turn 296: Orc reproduced at (12,9).
+Turn 297: Kill at (6,14), bonus 1.60.
+Turn 297: Kill at (12,9), bonus 1.40.
+Turn 297: Orc reproduced at (6,14).
+Turn 297: Orc reproduced at (12,9).
+Turn 298: Kill at (6,14), bonus 1.60.
+Turn 298: Kill at (12,9), bonus 1.40.
+Turn 298: Orc reproduced at (6,14).
+Turn 298: Orc reproduced at (12,9).
+Turn 299: Kill at (6,14), bonus 1.60.
+Turn 299: Kill at (12,9), bonus 1.40.
+Turn 299: Orc reproduced at (6,14).
+Turn 299: Orc reproduced at (12,9).
+Turn 300: Reinforcement.
+Turn 300: Orc reproduced at (5,14).
+Turn 300: Orc reproduced at (7,3).
+Turn 301: Resource at (5,2).
+Turn 301: Resource at (13,8).
+Turn 301: Orc reproduced at (5,2).
+Turn 301: Orc reproduced at (13,8).
+Turn 303: Resource at (5,15).
+Turn 303: Orc reproduced at (5,15).
+Turn 329: Resource at (0,12).
+Turn 329: Orc reproduced at (0,12).
+Turn 336: Resource at (12,4).
+Turn 350: Reinforcement.
+Turn 350: Kill at (5,13), bonus 1.20.
+Turn 350: Kill at (20,15), bonus 1.40.
+Turn 350: Orc reproduced at (20,15).
+Turn 351: Kill at (20,15), bonus 1.40.
+Turn 351: Orc reproduced at (20,15).
+Turn 352: Kill at (20,15), bonus 1.50.
+Turn 352: Kill at (8,9), bonus 1.10.
+Turn 352: Orc reproduced at (20,15).
+Turn 353: Kill at (20,15), bonus 1.50.
+Turn 353: Orc reproduced at (20,15).
+Turn 354: Kill at (20,15), bonus 1.50.
+Turn 354: Orc reproduced at (20,15).
+Turn 355: Kill at (20,15), bonus 1.50.
+Turn 355: Kill at (10,12), bonus 1.40.
+Turn 355: Orc reproduced at (20,15).
+Turn 356: Kill at (20,15), bonus 1.50.
+Turn 356: Orc reproduced at (20,15).
+Turn 357: Kill at (20,15), bonus 1.50.
+Turn 357: Orc reproduced at (20,15).
+Turn 358: Kill at (20,15), bonus 1.50.
+Turn 358: Kill at (0,6), bonus 1.20.
+Turn 358: Orc reproduced at (20,15).
+Turn 359: Kill at (20,15), bonus 1.50.
+Turn 359: Orc reproduced at (20,15).
+Turn 360: Kill at (20,15), bonus 1.50.
+Turn 360: Kill at (0,24), bonus 1.10.
+Turn 360: Orc reproduced at (20,15).
+Turn 361: Kill at (20,15), bonus 1.50.
+Turn 361: Kill at (0,8), bonus 1.20.
+Turn 361: Kill at (0,24), bonus 1.20.
+Turn 361: Orc reproduced at (20,15).
+Turn 361: Orc reproduced at (0,8).
+Turn 361: Orc reproduced at (0,24).
+Turn 362: Kill at (20,15), bonus 1.50.
+Turn 362: Kill at (0,8), bonus 1.20.
+Turn 362: Kill at (0,24), bonus 1.20.
+Turn 362: Orc reproduced at (20,15).
+Turn 362: Orc reproduced at (0,24).
+Turn 363: Kill at (20,15), bonus 1.50.
+Turn 363: Kill at (0,24), bonus 1.20.
+Turn 363: Orc reproduced at (20,15).
+Turn 364: Kill at (20,15), bonus 1.50.
+Turn 364: Orc reproduced at (20,15).
+Turn 365: Kill at (20,15), bonus 1.50.
+Turn 365: Orc reproduced at (20,15).
+Turn 366: Kill at (20,15), bonus 1.50.
+Turn 366: Orc reproduced at (20,15).
+Turn 367: Kill at (20,15), bonus 1.50.
+Turn 367: Orc reproduced at (20,15).
+Turn 368: Kill at (20,15), bonus 1.50.
+Turn 368: Orc reproduced at (20,15).
+Turn 369: Kill at (20,15), bonus 1.50.
+Turn 369: Orc reproduced at (20,15).
+Turn 370: Kill at (20,15), bonus 1.50.
+Turn 370: Orc reproduced at (20,15).
+Turn 371: Kill at (20,15), bonus 1.50.
+Turn 371: Orc reproduced at (20,15).
+Turn 372: Kill at (20,15), bonus 1.50.
+Turn 372: Orc reproduced at (20,15).
+Turn 373: Kill at (20,15), bonus 1.50.
+Turn 373: Orc reproduced at (20,15).
+Turn 374: Kill at (20,15), bonus 1.50.
+Turn 374: Orc reproduced at (20,15).
+Turn 375: Kill at (20,15), bonus 1.50.
+Turn 375: Orc reproduced at (20,15).
+Turn 376: Kill at (20,15), bonus 1.50.
+Turn 376: Orc reproduced at (20,15).
+Turn 377: Kill at (20,15), bonus 1.50.
+Turn 377: Orc reproduced at (20,15).
+Turn 378: Kill at (20,15), bonus 1.50.
+Turn 378: Orc reproduced at (20,15).
+Turn 379: Kill at (20,15), bonus 1.50.
+Turn 379: Orc reproduced at (20,15).
+Turn 380: Kill at (20,15), bonus 1.60.
+Turn 380: Orc reproduced at (20,15).
+Turn 381: Kill at (20,15), bonus 1.70.
+Turn 381: Orc reproduced at (20,15).
+Turn 382: Kill at (20,15), bonus 1.70.
+Turn 382: Orc reproduced at (20,15).
+Turn 383: Kill at (20,15), bonus 1.70.
+Turn 383: Orc reproduced at (20,15).
+Turn 384: Kill at (20,15), bonus 1.70.
+Turn 384: Orc reproduced at (20,15).
+Turn 385: Kill at (20,15), bonus 1.70.
+Turn 385: Orc reproduced at (20,15).
+Turn 386: Kill at (20,15), bonus 1.70.
+Turn 386: Orc reproduced at (20,15).
+Turn 387: Kill at (20,15), bonus 1.80.
+Turn 387: Orc reproduced at (20,15).
+Turn 388: Kill at (20,15), bonus 1.80.
+Turn 400: Reinforcement.
+Turn 400: Orc reproduced at (15,15).
+Turn 404: Resource at (22,17).
+Turn 421: Resource at (3,22).
+Turn 421: Orc reproduced at (3,22).
+Turn 435: Resource at (13,13).
+Turn 449: Resource at (9,22).
+Turn 450: Reinforcement.
+Turn 450: Kill at (13,19), bonus 1.10.
+Turn 450: Orc reproduced at (10,23).
+Turn 450: Orc reproduced at (13,19).
+Turn 451: Kill at (10,23), bonus 1.00.
+Turn 451: Kill at (13,19), bonus 1.10.
+Turn 451: Kill at (16,15), bonus 1.30.
+Turn 451: Orc reproduced at (16,15).
+Turn 452: Kill at (16,15), bonus 1.50.
+Turn 452: Kill at (6,11), bonus 1.20.
+Turn 452: Kill at (18,11), bonus 1.00.
+Turn 452: Orc reproduced at (16,15).
+Turn 453: Kill at (16,15), bonus 1.50.
+Turn 453: Kill at (17,5), bonus 1.10.
+Turn 453: Orc reproduced at (16,15).
+Turn 453: Orc reproduced at (17,5).
+Turn 454: Kill at (17,5), bonus 1.10.
+Turn 454: Kill at (16,15), bonus 1.70.
+Turn 454: Orc reproduced at (17,5).
+Turn 454: Orc reproduced at (16,15).
+Turn 455: Resource at (9,22).
+Turn 455: Kill at (16,15), bonus 1.70.
+Turn 455: Kill at (17,5), bonus 1.10.
+Turn 455: Orc reproduced at (9,22).
+Turn 456: Kill at (9,22), bonus 1.20.
+Turn 456: Kill at (18,17), bonus 2.10.
+Turn 456: Orc reproduced at (9,22).
+Turn 456: Orc reproduced at (18,17).
+Turn 457: Kill at (18,17), bonus 2.10.
+Turn 457: Kill at (9,22), bonus 1.30.
+Turn 457: Orc reproduced at (18,17).
+Turn 457: Orc reproduced at (9,22).
+Turn 458: Kill at (18,17), bonus 2.10.
+Turn 458: Kill at (9,22), bonus 1.30.
+Turn 458: Orc reproduced at (18,17).
+Turn 459: Kill at (18,17), bonus 2.10.
+Turn 459: Orc reproduced at (18,17).
+Turn 460: Kill at (18,17), bonus 2.10.
+Turn 460: Orc reproduced at (18,17).
+Turn 461: Kill at (18,17), bonus 2.10.
+Turn 461: Kill at (14,7), bonus 1.10.
+Turn 461: Orc reproduced at (18,17).
+Turn 461: Orc reproduced at (14,7).
+Turn 462: Kill at (18,17), bonus 2.10.
+Turn 462: Kill at (14,7), bonus 1.10.
+Turn 462: Orc reproduced at (18,17).
+Turn 462: Orc reproduced at (14,7).
+Turn 463: Kill at (18,17), bonus 2.10.
+Turn 463: Kill at (14,7), bonus 1.10.
+Turn 463: Orc reproduced at (18,17).
+Turn 464: Kill at (18,17), bonus 2.10.
+Turn 464: Orc reproduced at (18,17).
+Turn 465: Kill at (18,17), bonus 2.10.
+Turn 465: Orc reproduced at (18,17).
+Turn 466: Kill at (18,17), bonus 2.10.
+Turn 466: Orc reproduced at (18,17).
+Turn 467: Kill at (18,17), bonus 2.10.
+Turn 467: Orc reproduced at (18,17).
+Turn 468: Kill at (18,17), bonus 2.10.
+Turn 468: Orc reproduced at (18,17).
+Turn 469: Kill at (18,17), bonus 2.10.
+Turn 469: Orc reproduced at (18,17).
+Turn 470: Kill at (18,17), bonus 2.10.
+Turn 470: Orc reproduced at (18,17).
+Turn 471: Kill at (18,17), bonus 2.10.
+Turn 471: Orc reproduced at (18,17).
+Turn 472: Kill at (18,17), bonus 2.10.
+Turn 472: Orc reproduced at (18,17).
+Turn 473: Kill at (18,17), bonus 2.10.
+Turn 473: Orc reproduced at (18,17).
+Turn 474: Kill at (18,17), bonus 2.10.
+Turn 474: Orc reproduced at (18,17).
+Turn 475: Kill at (18,17), bonus 2.10.
+Turn 475: Orc reproduced at (18,17).
+Turn 476: Kill at (18,17), bonus 2.20.
+Turn 476: Orc reproduced at (18,17).
+Turn 477: Kill at (18,17), bonus 2.20.
+Turn 477: Orc reproduced at (18,17).
+Turn 478: Kill at (18,17), bonus 2.20.
+Turn 478: Orc reproduced at (18,17).
+Turn 479: Kill at (18,17), bonus 2.20.
+Turn 483: Kill at (0,2), bonus 1.20.
+Turn 483: Orc reproduced at (0,2).
+Turn 484: Kill at (0,2), bonus 1.20.
+Turn 500: Reinforcement.
+Turn 500: Orc reproduced at (14,17).
+Turn 500: Orc reproduced at (9,19).
+Turn 505: Resource at (23,16).
+Turn 505: Orc reproduced at (23,16).
+Turn 508: Resource at (2,1).
+Turn 508: Dwarf reproduced at (2,1).
+Turn 512: Resource at (12,19).
