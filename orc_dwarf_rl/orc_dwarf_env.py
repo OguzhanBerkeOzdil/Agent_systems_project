@@ -48,6 +48,13 @@ class OrcDwarfEnv(ParallelEnv):
         self.agents = [f"orc_{i}" for i in range(self.num_orcs)] + [
             f"dwarf_{i}" for i in range(self.num_dwarfs)
         ]
+        # ``possible_agents`` is a static list of all agents that can appear in
+        # the environment.  ``supersuit`` relies on this attribute for padding
+        # wrappers such as ``pad_observations_v0`` and ``pad_action_space_v0``.
+        # PettingZoo's API expects this list to remain constant across resets,
+        # so we store it separately from ``self.agents`` which is pruned as
+        # agents die during an episode.
+        self.possible_agents = list(self.agents)
         # spaces
         obs_dim = 9  # [x,y,energy,res_x,res_y,enemy_x,enemy_y,sight,speed]
         self.observation_spaces = {a: spaces.Box(low=-1.0, high=1.0, shape=(obs_dim,), dtype=np.float32) for a in self.agents}
@@ -66,6 +73,8 @@ class OrcDwarfEnv(ParallelEnv):
             random.seed(seed)
             np.random.seed(seed)
         self.steps = 0
+        # Ensure all agents are present at the start of each episode.
+        self.agents = list(self.possible_agents)
         self._spawn_resources()
         self.pos = {a: self._random_pos() for a in self.agents}
         self.energy = {a: INITIAL_ENERGY for a in self.agents}

@@ -1,6 +1,10 @@
 # Orc-Dwarf Reinforcement Learning
 
 This folder contains a simplified multi-agent RL setup using [PettingZoo](https://pettingzoo.farama.org/) and `sb3_contrib`.
+The environment is built on top of PettingZoo's `ParallelEnv` API.  Older
+releases of this repository relied on the deprecated `parallel_base_env`
+interface, so make sure you have an up to date copy of the code if you see
+import errors regarding `parallel_base_env`.
 
 ## Installation
 ```bash
