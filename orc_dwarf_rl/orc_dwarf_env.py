@@ -3,7 +3,11 @@ import numpy as np
 from pettingzoo.utils import parallel_base_env
 from gymnasium import spaces
 
-from .config import (
+# When run as a script the relative imports below fail because Python does not
+# treat the file as part of the ``orc_dwarf_rl`` package.  Using absolute
+# imports works both when the module is executed directly and when it is
+# imported as part of the package.
+from orc_dwarf_rl.config import (
     GRID_SIZE,
     NUM_ORCS,
     NUM_DWARFS,
