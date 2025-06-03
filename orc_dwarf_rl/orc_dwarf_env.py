@@ -1,6 +1,13 @@
 import random
 import numpy as np
-from pettingzoo.utils import parallel_base_env
+# ``parallel_base_env`` was removed in newer versions of PettingZoo.  The
+# replacement base class lives in ``pettingzoo.utils.env`` under the name
+# ``ParallelEnv``.
+try:
+    from pettingzoo.utils.env import ParallelEnv
+except ImportError:  # pragma: no cover - fallback for very old PettingZoo
+    from pettingzoo.utils import parallel_base_env as _old
+    ParallelEnv = _old.ParallelEnv
 from gymnasium import spaces
 
 # When run as a script the relative imports below fail because Python does not
@@ -22,7 +29,7 @@ from orc_dwarf_rl.config import (
 )
 
 
-class OrcDwarfEnv(parallel_base_env.ParallelEnv):
+class OrcDwarfEnv(ParallelEnv):
     """Simple grid-based predator/prey environment using PettingZoo's parallel API."""
 
     metadata = {"name": "orc_dwarf_v0"}

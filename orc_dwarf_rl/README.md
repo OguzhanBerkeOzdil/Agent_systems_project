@@ -8,7 +8,9 @@ pip install -r requirements.txt
 ```
 
 ## Training
-Run `python -m orc_dwarf_rl.main` to train agents in the environment. The script will save a model named `orc_dwarf_model`.
+Run `python -m orc_dwarf_rl.main` from the project root to train agents in the environment. The script will save a model named `orc_dwarf_model`.
+
+If you want to interact with the environment directly, run `python -m orc_dwarf_rl.orc_dwarf_env`. Executing the modules in this way ensures Python treats `orc_dwarf_rl` as a package and avoids `ModuleNotFoundError` issues.
 
 ## Evaluation
 After training, the script automatically runs a short evaluation showing a simple ASCII rendering of the grid.
