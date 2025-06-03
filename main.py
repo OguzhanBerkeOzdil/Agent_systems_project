@@ -43,17 +43,49 @@ def save_high_score(score):
 music_on = True
 
 # Initialize world
-orcs     = [Orc(random.randrange(GRID_SIZE), random.randrange(GRID_SIZE), INITIAL_PREDATOR_ENERGY)
-            for _ in range(NUM_ORCS)]
-dwarves  = [Dwarf(random.randrange(GRID_SIZE), random.randrange(GRID_SIZE), INITIAL_PREY_ENERGY)
-            for _ in range(NUM_DWARVES)]
-agents   = orcs + dwarves
 
-obstacles = [(random.randrange(GRID_SIZE), random.randrange(GRID_SIZE))
-             for _ in range(OBSTACLE_COUNT)]
+# --- Terrain generation ---
+obstacles = []
+while len(obstacles) < OBSTACLE_COUNT:
+    p = (random.randrange(GRID_SIZE), random.randrange(GRID_SIZE))
+    if p not in obstacles:
+        obstacles.append(p)
+
+resource_nodes = []
+while len(resource_nodes) < RESOURCE_NODE_COUNT:
+    p = (random.randrange(GRID_SIZE), random.randrange(GRID_SIZE))
+    if p not in obstacles and p not in resource_nodes:
+        resource_nodes.append(p)
+
+def random_empty_cell(extra_occupied=None):
+    """Return a random cell not occupied by terrain or agents."""
+    if extra_occupied is None:
+        extra_occupied = set()
+    while True:
+        p = (random.randrange(GRID_SIZE), random.randrange(GRID_SIZE))
+        if (
+            p not in obstacles
+            and p not in resource_nodes
+            and not any(a.x == p[0] and a.y == p[1] for a in agents)
+            and p not in extra_occupied
+        ):
+            return p
+
+orcs = []
+dwarves = []
+agents = []
+for _ in range(NUM_ORCS):
+    x, y = random_empty_cell()
+    o = Orc(x, y, INITIAL_PREDATOR_ENERGY)
+    orcs.append(o)
+    agents.append(o)
+for _ in range(NUM_DWARVES):
+    x, y = random_empty_cell()
+    d = Dwarf(x, y, INITIAL_PREY_ENERGY)
+    dwarves.append(d)
+    agents.append(d)
+
 heatmap   = [[0]*GRID_SIZE for _ in range(GRID_SIZE)]
-resource_nodes = [(random.randrange(GRID_SIZE), random.randrange(GRID_SIZE))
-                  for _ in range(RESOURCE_NODE_COUNT)]
 last_resource_spawn = 0
 
 # Event log
@@ -128,9 +160,11 @@ def reinforcement_event():
         if a.alive:
             a.energy += REINFORCEMENT_ENERGY_BOOST
     for _ in range(REINFORCEMENT_NEW_ORCS):
-        agents.append(Orc(random.randrange(GRID_SIZE), random.randrange(GRID_SIZE), INITIAL_PREDATOR_ENERGY))
+        x, y = random_empty_cell()
+        agents.append(Orc(x, y, INITIAL_PREDATOR_ENERGY))
     for _ in range(REINFORCEMENT_NEW_DWARVES):
-        agents.append(Dwarf(random.randrange(GRID_SIZE), random.randrange(GRID_SIZE), INITIAL_PREY_ENERGY))
+        x, y = random_empty_cell()
+        agents.append(Dwarf(x, y, INITIAL_PREY_ENERGY))
     log_event(f"Turn {turn_counter}: Reinforcement")
     orcs    = [x for x in agents if isinstance(x, Orc)]
     dwarves = [x for x in agents if isinstance(x, Dwarf)]
@@ -159,7 +193,7 @@ def update_agents():
         if a.energy <= low_th:
             res = find_closest_resource(a)
             if res:
-                a.move_toward_pos(*res)
+                a.move_toward_pos(*res, obstacles)
                 log_event(
                     f"Turn {turn_counter}: {'Orc' if isinstance(a, Orc) else 'Dwarf'} low energy seeking food"
                 )
@@ -172,21 +206,18 @@ def update_agents():
                     if not (
                         weather_state == "storm" and random.random() < STORM_MOVEMENT_SLOWDOWN
                     ):
-                        a.move_toward(tgt)
+                        a.move_toward(tgt, obstacles)
                 else:
-                    a.move_random()
+                    a.move_random(obstacles)
             else:
                 thr = find_closest_enemy(a, agents, True)
                 if thr and a.distance_to(thr) <= a.vision_radius:
-                    a.move_away_from(thr)
+                    a.move_away_from(thr, obstacles)
                 else:
-                    a.move_random()
+                    a.move_random(obstacles)
 
         loss_base = PREDATOR_ENERGY_LOSS if a.is_predator else PREY_ENERGY_LOSS
         a.energy -= (loss_base + extra_loss) * loss_mult
-
-        if (a.x, a.y) in obstacles:
-            a.x, a.y = old_x, old_y
 
         heatmap[a.x][a.y] += 1
 
@@ -291,7 +322,9 @@ def update_resources():
     global last_resource_spawn
     if turn_counter - last_resource_spawn >= RESOURCE_NODE_RESPAWN_INTERVAL:
         while len(resource_nodes) < RESOURCE_NODE_COUNT:
-            resource_nodes.append((random.randrange(GRID_SIZE), random.randrange(GRID_SIZE)))
+            p = random_empty_cell()
+            if p not in resource_nodes:
+                resource_nodes.append(p)
         last_resource_spawn = turn_counter
 
 def draw_minimap():
