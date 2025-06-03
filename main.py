@@ -115,6 +115,12 @@ def find_closest_enemy(agent, lst, enemy_flag):
     cands = [a for a in lst if a.alive and a.is_predator == enemy_flag]
     return min(cands, key=lambda e: agent.distance_to(e)) if cands else None
 
+def find_closest_resource(agent):
+    """Return nearest resource node coordinates."""
+    if not resource_nodes:
+        return None
+    return min(resource_nodes, key=lambda p: abs(agent.x - p[0]) + abs(agent.y - p[1]))
+
 def reinforcement_event():
     """Give energy boost and spawn new agents."""
     global orcs, dwarves
@@ -146,21 +152,38 @@ def update_agents():
             extra_loss = STORM_ENERGY_LOSS_INCREASE
         loss_mult = DAY_TEMP_MULTIPLIER if day else NIGHT_TEMP_MULTIPLIER
 
-        if a.is_predator:
-            tgt = find_closest_enemy(a, agents, False)
-            if tgt and a.distance_to(tgt) <= a.vision_radius:
-                if not (weather_state=="storm" and random.random()<STORM_MOVEMENT_SLOWDOWN):
-                    a.move_toward(tgt)
+        seeking_food = False
+        low_th = (
+            REPRODUCTION_THRESHOLD if isinstance(a, Orc) else DWARF_REPRODUCTION_THRESHOLD
+        ) * LOW_ENERGY_RATIO
+        if a.energy <= low_th:
+            res = find_closest_resource(a)
+            if res:
+                a.move_toward_pos(*res)
+                log_event(
+                    f"Turn {turn_counter}: {'Orc' if isinstance(a, Orc) else 'Dwarf'} low energy seeking food"
+                )
+                seeking_food = True
+
+        if not seeking_food:
+            if a.is_predator:
+                tgt = find_closest_enemy(a, agents, False)
+                if tgt and a.distance_to(tgt) <= a.vision_radius:
+                    if not (
+                        weather_state == "storm" and random.random() < STORM_MOVEMENT_SLOWDOWN
+                    ):
+                        a.move_toward(tgt)
+                else:
+                    a.move_random()
             else:
-                a.move_random()
-            a.energy -= (PREDATOR_ENERGY_LOSS + extra_loss) * loss_mult
-        else:
-            thr = find_closest_enemy(a, agents, True)
-            if thr and a.distance_to(thr) <= a.vision_radius:
-                a.move_away_from(thr)
-            else:
-                a.move_random()
-            a.energy -= (PREY_ENERGY_LOSS + extra_loss) * loss_mult
+                thr = find_closest_enemy(a, agents, True)
+                if thr and a.distance_to(thr) <= a.vision_radius:
+                    a.move_away_from(thr)
+                else:
+                    a.move_random()
+
+        loss_base = PREDATOR_ENERGY_LOSS if a.is_predator else PREY_ENERGY_LOSS
+        a.energy -= (loss_base + extra_loss) * loss_mult
 
         if (a.x, a.y) in obstacles:
             a.x, a.y = old_x, old_y

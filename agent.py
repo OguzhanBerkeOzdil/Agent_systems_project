@@ -49,6 +49,12 @@ class Agent:
         dy = (1 if self.y < target.y else -1 if self.y > target.y else 0) * self.speed
         self._move(dx, dy)
 
+    def move_toward_pos(self, x, y):
+        """Move one step toward a coordinate."""
+        dx = (1 if self.x < x else -1 if self.x > x else 0) * self.speed
+        dy = (1 if self.y < y else -1 if self.y > y else 0) * self.speed
+        self._move(dx, dy)
+
     def move_away_from(self, target):
         """Move one step away from a target."""
         if not target:
