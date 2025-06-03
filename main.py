@@ -5,7 +5,7 @@ import random
 import pygame
 from pygame import mixer
 from config import *
-from agent import Orc, Dwarf
+from agent import Orc, Dwarf, mutate_trait
 
 pygame.init()
 screen = pygame.display.set_mode(WINDOW_SIZE)
@@ -32,6 +32,7 @@ except:
     high_score = 0
 
 def save_high_score(score):
+    """Persist high score to file."""
     global high_score
     if score > high_score:
         high_score = score
@@ -61,6 +62,7 @@ log_filename = "log.txt"
 if os.path.exists(log_filename):
     os.remove(log_filename)
 def log_event(msg):
+    """Append a message to the log overlay and file."""
     with open(log_filename, "a") as f:
         f.write(msg + "\n")
     event_log.append(msg)
@@ -75,6 +77,7 @@ turn_history, orc_history, dwarf_history = [], [], []
 day = True
 turn_counter = 0
 paused = False
+fast_mode = False  # when True simulation runs at FAST_FPS
 show_heatmap = SHOW_HEATMAP
 weather_state = "clear"
 last_weather_change = 0
@@ -86,28 +89,34 @@ game_over_message = ""
 # --- Core functions ---
 
 def switch_roles():
+    """Swap predator/prey roles for day/night."""
     global day
     day = not day
     for a in agents:
         a.is_predator = day if isinstance(a, Orc) else not day
 
 def update_weather():
+    """Randomly change weather after an interval."""
     global weather_state, last_weather_change
     if turn_counter - last_weather_change >= WEATHER_CHANGE_INTERVAL:
         weather_state = random.choice(WEATHER_STATES)
         last_weather_change = turn_counter
 
 def count_pack_members(agent):
-    return sum(1 for other in agents
-               if other.alive and other.is_predator
-               and other != agent
-               and agent.distance_to(other) <= PACK_RADIUS)
+    """Number of allied predators near the agent."""
+    return sum(
+        1
+        for other in agents
+        if other.alive and other.is_predator and other != agent and agent.distance_to(other) <= PACK_RADIUS
+    )
 
 def find_closest_enemy(agent, lst, enemy_flag):
+    """Return nearest opposing agent from a list."""
     cands = [a for a in lst if a.alive and a.is_predator == enemy_flag]
     return min(cands, key=lambda e: agent.distance_to(e)) if cands else None
 
 def reinforcement_event():
+    """Give energy boost and spawn new agents."""
     global orcs, dwarves
     for a in agents:
         if a.alive:
@@ -121,6 +130,7 @@ def reinforcement_event():
     dwarves = [x for x in agents if isinstance(x, Dwarf)]
 
 def update_agents():
+    """Move agents and handle energy/aging."""
     global heatmap, orc_deaths, dwarf_deaths
     heatmap = [[0]*GRID_SIZE for _ in range(GRID_SIZE)]
     for a in agents:
@@ -177,6 +187,7 @@ def update_agents():
 
 kill_particles = []
 def spawn_kill_particles(cx, cy):
+    """Create particle effects at a location."""
     for _ in range(KILL_PARTICLE_COUNT):
         kill_particles.append({
             "x": cx*CELL_SIZE + CELL_SIZE//2,
@@ -187,6 +198,7 @@ def spawn_kill_particles(cx, cy):
         })
 
 def update_kill_particles(dt):
+    """Advance particle animations."""
     for p in kill_particles[:]:
         p["x"] += p["dx"]
         p["y"] += p["dy"]
@@ -195,6 +207,7 @@ def update_kill_particles(dt):
             kill_particles.remove(p)
 
 def draw_kill_particles():
+    """Render active kill particles."""
     for p in kill_particles:
         alpha = int(255 * (p["life"]/KILL_PARTICLE_LIFETIME))
         surf = pygame.Surface((4,4), pygame.SRCALPHA)
@@ -202,6 +215,7 @@ def draw_kill_particles():
         screen.blit(surf, (p["x"], p["y"]))
 
 def check_interactions():
+    """Resolve predator-prey collisions."""
     global orc_deaths, dwarf_deaths
     for predator in [a for a in agents if a.alive and a.is_predator]:
         for prey in [a for a in agents if a.alive and not a.is_predator]:
@@ -223,6 +237,7 @@ def check_interactions():
                 break
 
 def reproduce_agents():
+    """Handle reproduction with trait mutation."""
     global orcs, dwarves
     new_agents = []
     for a in agents:
@@ -231,13 +246,17 @@ def reproduce_agents():
         if isinstance(a, Dwarf) and a.energy >= DWARF_REPRODUCTION_THRESHOLD:
             off = int(a.energy * (1 - DWARF_REPRODUCTION_COST))
             a.energy = int(a.energy * DWARF_REPRODUCTION_COST)
-            new_agents.append(Dwarf(a.x, a.y, off))
+            child_speed = mutate_trait(a.speed, DWARF_MIN_SPEED, DWARF_MAX_SPEED)
+            child_vis   = mutate_trait(a.vision_radius, DWARF_MIN_VISION_RADIUS, DWARF_MAX_VISION_RADIUS)
+            new_agents.append(Dwarf(a.x, a.y, off, child_speed, child_vis))
             if repro_sound: repro_sound.play()
             log_event(f"Turn {turn_counter}: Dwarf reproduced @({a.x},{a.y})")
         elif isinstance(a, Orc) and a.energy >= REPRODUCTION_THRESHOLD:
             off = a.energy // 2
             a.energy //= 2
-            new_agents.append(Orc(a.x, a.y, off))
+            child_speed = mutate_trait(a.speed, ORC_MIN_SPEED, ORC_MAX_SPEED)
+            child_vis   = mutate_trait(a.vision_radius, ORC_MIN_VISION_RADIUS, ORC_MAX_VISION_RADIUS)
+            new_agents.append(Orc(a.x, a.y, off, child_speed, child_vis))
             if repro_sound: repro_sound.play()
             log_event(f"Turn {turn_counter}: Orc reproduced @({a.x},{a.y})")
     agents.extend(new_agents)
@@ -245,6 +264,7 @@ def reproduce_agents():
     dwarves = [x for x in agents if isinstance(x, Dwarf)]
 
 def update_resources():
+    """Respawn resource nodes periodically."""
     global last_resource_spawn
     if turn_counter - last_resource_spawn >= RESOURCE_NODE_RESPAWN_INTERVAL:
         while len(resource_nodes) < RESOURCE_NODE_COUNT:
@@ -252,6 +272,7 @@ def update_resources():
         last_resource_spawn = turn_counter
 
 def draw_minimap():
+    """Render small map showing agent positions."""
     size = int(GRID_SIZE * CELL_SIZE * MINIMAP_SCALE)
     m = pygame.Surface((size, size))
     m.fill((0,0,0))
@@ -265,6 +286,7 @@ def draw_minimap():
     screen.blit(m, (WINDOW_WIDTH - size - MINIMAP_PADDING, MINIMAP_PADDING))
 
 def draw_event_log():
+    """Display recent events in the corner."""
     font = pygame.font.SysFont(None, 18)
     ow = WINDOW_WIDTH // 3
     oh = LOG_OVERLAY_MAX * 18 + 8
@@ -276,6 +298,7 @@ def draw_event_log():
     screen.blit(surf, (10, 10))
 
 def draw_grid():
+    """Draw world tiles, effects and agents."""
     bg = DAY_BG_COLOR if day else NIGHT_BG_COLOR
     if weather_state == "storm":
         bg = (20,20,60)
@@ -330,6 +353,7 @@ def draw_grid():
     draw_event_log()
 
 def draw_ui():
+    """Render status bars and history graph."""
     font = pygame.font.SysFont(None, 24)
     oa = sum(1 for a in agents if isinstance(a, Orc) and a.alive)
     da = sum(1 for a in agents if isinstance(a, Dwarf) and a.alive)
@@ -339,7 +363,7 @@ def draw_ui():
               f"OrcsAlive:{oa} OrcsDead:{orc_deaths} "
               f"DwarvesAlive:{da} DwarvesDead:{dwarf_deaths} "
               f"Day:{day} Weather:{weather_state} "
-              f"Paused:{paused} Heatmap:{show_heatmap} "
+              f"Paused:{paused} Fast:{fast_mode} Heatmap:{show_heatmap} "
               f"NextRes:{rin} HighScore:{high_score}")
     screen.blit(font.render(status, True, UI_FONT_COLOR),
                 (10, GRID_SIZE*CELL_SIZE + 10))
@@ -368,6 +392,7 @@ def draw_ui():
             pygame.draw.lines(screen, DWARF_COLOR, False, pts_d, 2)
 
 def draw_game_over():
+    """Overlay game-over message."""
     font = pygame.font.SysFont(None, 48)
     text = font.render(game_over_message, True, (255,255,255))
     rect = text.get_rect(center=(WINDOW_WIDTH//2, WINDOW_HEIGHT//2))
@@ -381,7 +406,7 @@ switch_roles()
 
 running = True
 while running:
-    clock.tick(FPS)
+    clock.tick(FAST_FPS if fast_mode else FPS)
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
             running = False
@@ -396,6 +421,8 @@ while running:
                 mixer.music.set_volume(vol)
                 for s in (attack_sound, death_sound, repro_sound):
                     if s: s.set_volume(vol)
+            if e.key == pygame.K_f:
+                fast_mode = not fast_mode
             if e.key == pygame.K_r:
                 # Anında reinforcement
                 reinforcement_event()
