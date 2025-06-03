@@ -1,0 +1,6 @@
+pettingzoo
+supersuit
+sb3_contrib
+stable-baselines3
+gymnasium
+torch
