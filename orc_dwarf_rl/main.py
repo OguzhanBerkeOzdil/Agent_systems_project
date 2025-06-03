@@ -1,7 +1,10 @@
 from sb3_contrib import MaskablePPO
 import supersuit as ss
-from .orc_dwarf_env import OrcDwarfEnv
-from .config import LEARNING_RATE, NUM_ORCS, NUM_DWARFS
+
+# Absolute imports allow running this script directly with ``python main.py``
+# while still functioning when used as a module via ``python -m orc_dwarf_rl.main``.
+from orc_dwarf_rl.orc_dwarf_env import OrcDwarfEnv
+from orc_dwarf_rl.config import LEARNING_RATE, NUM_ORCS, NUM_DWARFS
 
 
 def train(total_timesteps=200000):
