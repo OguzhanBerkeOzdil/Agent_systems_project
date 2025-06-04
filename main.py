@@ -1,6 +1,7 @@
 # main.py
 
 import os
+import json
 import random
 import pygame
 from pygame import mixer
@@ -30,6 +31,19 @@ try:
         high_score = int(f.read().strip())
 except:
     high_score = 0
+
+# --- Simple learning weights ---
+WEIGHT_FILE = "learned_params.json"
+default_weights = {
+    "orc": {"hunt": 1.0, "wander": 1.0, "seek_food": 1.0},
+    "dwarf": {"flee": 1.0, "wander": 1.0, "seek_food": 1.0},
+}
+try:
+    with open(WEIGHT_FILE) as f:
+        weights = json.load(f)
+except Exception:
+    weights = default_weights.copy()
+
 
 def save_high_score(score):
     """Persist high score to file."""
@@ -153,6 +167,41 @@ def find_closest_resource(agent):
         return None
     return min(resource_nodes, key=lambda p: abs(agent.x - p[0]) + abs(agent.y - p[1]))
 
+
+def weighted_choice(species, actions):
+    """Choose an action based on learned weights."""
+    table = weights[species]
+    w = [table.get(a, 1.0) for a in actions]
+    total = sum(w)
+    r = random.random() * total
+    upto = 0.0
+    for act, weight in zip(actions, w):
+        upto += weight
+        if r <= upto:
+            return act
+    return actions[-1]
+
+
+def update_learning(winner):
+    """Update weights based on winner and save to disk."""
+    if winner not in ("Orcs", "Dwarves"):
+        return
+    win_key = "orc" if winner == "Orcs" else "dwarf"
+    lose_key = "dwarf" if winner == "Orcs" else "orc"
+    for a in agents:
+        key = "orc" if isinstance(a, Orc) else "dwarf"
+        for act in a.action_history:
+            if key == win_key:
+                weights[key][act] = weights[key].get(act, 1.0) + 1.0
+            elif key == lose_key:
+                weights[key][act] = max(0.1, weights[key].get(act, 1.0) - 0.5)
+        a.action_history.clear()
+    try:
+        with open(WEIGHT_FILE, "w") as f:
+            json.dump(weights, f, indent=2)
+    except Exception:
+        pass
+
 def reinforcement_event():
     """Give energy boost and spawn new agents."""
     global orcs, dwarves
@@ -186,35 +235,44 @@ def update_agents():
             extra_loss = STORM_ENERGY_LOSS_INCREASE
         loss_mult = DAY_TEMP_MULTIPLIER if day else NIGHT_TEMP_MULTIPLIER
 
-        seeking_food = False
         low_th = (
             REPRODUCTION_THRESHOLD if isinstance(a, Orc) else DWARF_REPRODUCTION_THRESHOLD
         ) * LOW_ENERGY_RATIO
+        possible = []
+        res = None
+        tgt = None
+        thr = None
         if a.energy <= low_th:
             res = find_closest_resource(a)
             if res:
-                a.move_toward_pos(*res, obstacles)
-                log_event(
-                    f"Turn {turn_counter}: {'Orc' if isinstance(a, Orc) else 'Dwarf'} low energy seeking food"
-                )
-                seeking_food = True
-
-        if not seeking_food:
-            if a.is_predator:
-                tgt = find_closest_enemy(a, agents, False)
-                if tgt and a.distance_to(tgt) <= a.vision_radius:
-                    if not (
-                        weather_state == "storm" and random.random() < STORM_MOVEMENT_SLOWDOWN
-                    ):
-                        a.move_toward(tgt, obstacles)
-                else:
-                    a.move_random(obstacles)
+                possible.append("seek_food")
+        if a.is_predator:
+            tgt = find_closest_enemy(a, agents, False)
+            if tgt and a.distance_to(tgt) <= a.vision_radius:
+                possible.append("hunt")
+        else:
+            thr = find_closest_enemy(a, agents, True)
+            if thr and a.distance_to(thr) <= a.vision_radius:
+                possible.append("flee")
+        possible.append("wander")
+        choice = weighted_choice("orc" if isinstance(a, Orc) else "dwarf", possible)
+        if choice == "seek_food" and res:
+            a.move_toward_pos(*res, obstacles)
+            log_event(
+                f"Turn {turn_counter}: {'Orc' if isinstance(a, Orc) else 'Dwarf'} low energy seeking food"
+            )
+        elif choice == "hunt" and tgt:
+            if not (
+                weather_state == "storm" and random.random() < STORM_MOVEMENT_SLOWDOWN
+            ):
+                a.move_toward(tgt, obstacles)
             else:
-                thr = find_closest_enemy(a, agents, True)
-                if thr and a.distance_to(thr) <= a.vision_radius:
-                    a.move_away_from(thr, obstacles)
-                else:
-                    a.move_random(obstacles)
+                a.move_random(obstacles)
+        elif choice == "flee" and thr:
+            a.move_away_from(thr, obstacles)
+        else:
+            a.move_random(obstacles)
+        a.action_history.append(choice)
 
         loss_base = PREDATOR_ENERGY_LOSS if a.is_predator else PREY_ENERGY_LOSS
         a.energy -= (loss_base + extra_loss) * loss_mult
@@ -508,14 +566,19 @@ while running:
             game_over = True
             paused = True
             if oa == 0 and da == 0:
+                winner = None
                 game_over_message = "Draw — all perished!"
             elif oa == 0:
+                winner = "Dwarves"
                 game_over_message = "Dwarves Win!"
             elif da == 0:
+                winner = "Orcs"
                 game_over_message = "Orcs Win!"
             else:
+                winner = None
                 game_over_message = f"Draw — reached {MAX_TURNS} turns!"
             log_event(f"Game Over: {game_over_message}")
+            update_learning(winner)
 
     draw_grid()
     draw_ui()
