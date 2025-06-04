@@ -6,6 +6,15 @@ import numpy as np
 from collections import defaultdict
 from config import *
 
+# global log storage for debug overlay
+log_lines = []
+
+def add_log_line(msg):
+    """Append a message to log_lines and truncate."""
+    log_lines.append(msg)
+    if len(log_lines) > 15:
+        del log_lines[0]
+
 # Discrete actions for Q-learning
 ACTIONS = [
     "move_random",
@@ -76,8 +85,9 @@ class Agent:
         td_target = reward + GAMMA * best_next
         td_error = td_target - self.q_table[state][action_idx]
         self.q_table[state][action_idx] += ALPHA * td_error
+        return self.q_table[state][action_idx]
 
-    def act(self, env):
+    def act(self, env, episode=1, turn=0):
         """
         Perform one decision step:
           1) Observe current state
@@ -128,7 +138,15 @@ class Agent:
         # Compute reward and learn
         reward = self.energy - prev_energy
         next_state = self.get_state(env)
-        self.update_q(state, action_idx, reward, next_state)
+        new_q = self.update_q(state, action_idx, reward, next_state)
+
+        log_msg = (
+            f"[Ep:{episode}] [T:{turn}] [Agent:{id(self)},{self.__class__.__name__}] "
+            f"State:{state} Action:{ACTIONS[action_idx]} Reward:{reward:.2f} "
+            f"New_Q:{new_q:.2f}"
+        )
+        print(log_msg)
+        add_log_line(log_msg)
 
     # ─── Movement Helpers ─────────────────────────────────────────────────────
 
