@@ -1,0 +1,22 @@
+Turn 5: Predator fell at 14,13
+Turn 9: Kill at 2,21 bonus 1.10
+Turn 14: Kill at 24,27 bonus 1.10
+Turn 16: Predator fell at 15,19
+Turn 18: Kill at 2,14 bonus 1.10
+Turn 22: Predator fell at 13,12
+Turn 24: Predator fell at 0,8
+Turn 44: Kill at 0,4 bonus 1.10
+Turn 58: Kill at 0,2 bonus 1.10
+Turn 66: Kill at 3,0 bonus 1.10
+Turn 138: Kill at 8,9 bonus 1.10
+Turn 143: Predator fell at 12,7
+Turn 151: Predator fell at 26,7
+Turn 152: Predator fell at 15,9
+Turn 152: Predator fell at 15,9
+Turn 156: Predator fell at 24,7
+Turn 165: Kill at 23,2 bonus 1.10
+Turn 226: Kill at 13,16 bonus 1.10
+Turn 252: Kill at 2,18 bonus 1.10
+Turn 468: Predator fell at 29,29
+Turn 527: Predator fell at 4,3
+Turn 828: Kill at 5,9 bonus 1.10

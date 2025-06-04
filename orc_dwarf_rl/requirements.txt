@@ -1,0 +1,8 @@
+# orc_dwarf_rl/requirements.txt
+
+pettingzoo
+supersuit
+sb3_contrib
+stable-baselines3
+gymnasium
+torch

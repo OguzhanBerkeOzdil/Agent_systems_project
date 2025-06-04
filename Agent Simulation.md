@@ -43,6 +43,12 @@
   * `H` – Toggle Heatmap
   * `M` – Mute/Unmute Audio
   * `R` – Instant Reinforcement
+  * `F` – Toggle Fast-Forward
+
+## Version 3 (Adaptive Traits)
+
+* **Genetic Mutation**: Offspring inherit parents' speed and vision with slight random mutation, allowing traits to evolve over time.
+* **Fast-Forward Mode**: Press `F` to run the simulation at a higher frame rate for quicker testing.
 
 ---
 
