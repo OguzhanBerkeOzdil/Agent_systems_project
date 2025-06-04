@@ -6,7 +6,7 @@ import math
 import pygame
 from pygame import mixer
 from config import *
-from agent import Orc, Dwarf
+from agent import Orc, Dwarf, log_lines
 
 pygame.init()
 screen = pygame.display.set_mode(WINDOW_SIZE)
@@ -227,35 +227,18 @@ def draw_grid():
         pygame.draw.rect(screen,color,fg_r)
 
 def draw_ui():
-    font = pygame.font.SysFont(None,24)
-    oa = sum(1 for a in agents if isinstance(a,Orc) and a.alive)
-    da = sum(1 for a in agents if isinstance(a,Dwarf) and a.alive)
-    save_high_score(oa+da)
-    rin = max(0, RESOURCE_RESPAWN_TIMER - (turn_counter - last_resource_spawn))
-    status = (f"Turn:{turn_counter} Orcs:{oa}/{orc_deaths} "
-              f"Dwarves:{da}/{dwarf_deaths} Day:{day} "
-              f"Weather:{weather_state} Heatmap:{show_heatmap} "
-              f"NextRes:{rin} HighScore:{high_score}")
-    screen.blit(font.render(status,True,UI_FONT_COLOR),
-                (10,GRID_SIZE*CELL_SIZE+10))
-    fps_t = font.render(f"FPS:{int(clock.get_fps())}",True,UI_FONT_COLOR)
-    screen.blit(fps_t,(WINDOW_WIDTH-100,GRID_SIZE*CELL_SIZE+50))
-    # bottom chart
-    top = GRID_SIZE*CELL_SIZE+UI_HEIGHT
-    bot = top+CHART_HEIGHT
-    pygame.draw.line(screen,UI_FONT_COLOR,(10,bot-10),(WINDOW_WIDTH-10,bot-10),1)
-    pygame.draw.line(screen,UI_FONT_COLOR,(10,top+10),(10,bot-10),1)
-    if turn_history:
-        m = max(max(orc_history),max(dwarf_history),1)
-        pts_o=[]; pts_d=[]
-        for i,t in enumerate(turn_history):
-            x = 10 + (t/turn_history[-1])*(WINDOW_WIDTH-20)
-            y_o = bot-10 - (orc_history[i]/m)*(CHART_HEIGHT-20)
-            y_d = bot-10 - (dwarf_history[i]/m)*(CHART_HEIGHT-20)
-            pts_o.append((x,y_o)); pts_d.append((x,y_d))
-        if len(pts_o)>1:
-            pygame.draw.lines(screen,ORC_COLOR,False,pts_o,2)
-            pygame.draw.lines(screen,DWARF_COLOR,False,pts_d,2)
+    font = pygame.font.SysFont("arial", 14)
+    oa = sum(1 for a in agents if isinstance(a, Orc) and a.alive)
+    da = sum(1 for a in agents if isinstance(a, Dwarf) and a.alive)
+    info = font.render(f"Turn {turn_counter}  Orcs:{oa}  Dwarves:{da}", True, UI_FONT_COLOR)
+    screen.blit(info, (5, 5))
+
+    log_x = WINDOW_WIDTH - LOG_PANEL_WIDTH + 5
+    y = 5 + font.get_height() + 5
+    for line in log_lines[-15:]:
+        text = font.render(line, True, UI_FONT_COLOR)
+        screen.blit(text, (log_x, y))
+        y += font.get_height() + 2
 
 def draw_game_over():
     font = pygame.font.SysFont(None,48)
@@ -271,7 +254,7 @@ switch_roles()
 
 running = True
 while running:
-    clock.tick(FPS)
+    clock.tick(5)
     for e in pygame.event.get():
         if e.type==pygame.QUIT:
             running=False
@@ -285,6 +268,12 @@ while running:
                     mixer.music.pause()
                 else:
                     mixer.music.unpause()
+            elif e.key==pygame.K_r:
+                while True:
+                    p = (random.randrange(GRID_SIZE), random.randrange(GRID_SIZE))
+                    if p not in resource_nodes and p not in obstacles:
+                        resource_nodes.append(p)
+                        break
 
     if not paused and not game_over:
         turn_counter+=1
@@ -296,7 +285,7 @@ while running:
         env = RLEnv(agents, resource_nodes)
         for a in agents:
             if a.alive:
-                a.act(env)
+                a.act(env, episode=1, turn=turn_counter)
                 # optional smooth animation:
                 a.update_animation()
 
