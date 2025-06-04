@@ -1,15 +1,7 @@
-<<<<<<< HEAD
 # orc_dwarf_rl/requirements.txt
-
-=======
->>>>>>> 44018d4f7d167cddd0fc021a73e5e37e0a612004
 pettingzoo
 supersuit
 sb3_contrib
 stable-baselines3
 gymnasium
-<<<<<<< HEAD
 torch
-=======
-torch
->>>>>>> 44018d4f7d167cddd0fc021a73e5e37e0a612004

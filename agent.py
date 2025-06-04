@@ -33,6 +33,8 @@ class Agent:
             if vision_radius is not None
             else random.randint(MIN_VISION_RADIUS, MAX_VISION_RADIUS)
         )
+        # record actions taken for simple learning mechanism
+        self.action_history = []
 
     def move_random(self, obstacles=None):
         """Move to a random neighbouring cell avoiding obstacles."""
